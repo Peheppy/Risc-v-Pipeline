@@ -67,6 +67,7 @@ opcode = {
  "sra": "0110011",
  "or": "0110011",
  "and": "0110011",
+ "halt": "1111111",
 }
 
 # bits 12-14
@@ -216,7 +217,7 @@ def translate_instruction(instruction):
 	rd = instruction.split(" ")[1].split(",")[0]
 	rd = bin(int(rd[1:]))[2:].zfill(5)
 
-	if (instr == "lui" or instr == "auipc"):
+	if (instr == "lui" or instr == "auipc" or instr == "halt"):
 		imm = instruction.split(" ")[1].split(",")[1]
 		imm = sfill(sbin(imm)[0:20], 20)
 

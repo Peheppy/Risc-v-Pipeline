@@ -5,3 +5,9 @@ sub x7,x7,x6
 slli x7,x7,4
 srli x7,x7,2
 srai x7,x7,2
+halt x0,0
+add x7,x4,x6
+add x7,x4,x6
+add x7,x4,x6
+add x7,x4,x6
+add x7,x4,x6
