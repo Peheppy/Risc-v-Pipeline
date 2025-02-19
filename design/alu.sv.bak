@@ -17,20 +17,12 @@ module alu#(
             case(Operation)
             4'b0000:        // AND
                     ALUResult = SrcA & SrcB;
-            4'b0001:        // OR
-                    ALUResult = SrcA | SrcB;
             4'b0010:        // ADD
                     ALUResult = SrcA + SrcB;
-            4'b0110:        // SUB
-                    ALUResult = SrcA - SrcB;
             4'b1000:        // Equal
                     ALUResult = (SrcA == SrcB) ? 1 : 0;
-	    4'b0100:        // Slli
+	    4'b1001: // Slli
 		    ALUResult = SrcA << SrcB;
-            4'b0101:        // Srli
-		    ALUResult = SrcA >> SrcB;
-            4'b0111:        // Srai
-		    ALUResult = $signed(SrcA) >>> SrcB[5-1:0]; // porque o "funct7" dele e 01000, assim iria considerar um numero maior
             default:
                     ALUResult = 0;
             endcase
