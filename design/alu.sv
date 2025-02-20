@@ -30,7 +30,7 @@ module alu#(
             4'b0101:        // Srli
 		    ALUResult = SrcA >> SrcB;
             4'b0111:        // Srai
-		    ALUResult = $signed(SrcA) >>> SrcB[5-1:0]; // porque o "funct7" dele e 01000, assim iria considerar um numero maior
+		    ALUResult = $signed(SrcA) >>> SrcB[5-1:0]; // porque o "funct7" de srcb e 01000, assim iria considerar um numero maior
             default:
                     ALUResult = 0;
             endcase

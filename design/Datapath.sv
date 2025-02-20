@@ -52,6 +52,8 @@ module Datapath #(
   logic [DATA_W-1:0] FBmux_Result;
   logic Reg_Stall;  //1: PC fetch same, Register not update
 
+  logic Halt;        // Sinal interno para armazenar se Halt já ocorreu
+
   if_id_reg A;
   id_ex_reg B;
   ex_mem_reg C;
@@ -91,9 +93,14 @@ module Datapath #(
     end
         else if (!Reg_Stall)    // stall
         begin
-      A.Curr_Pc <= PC;
-      A.Curr_Instr <= Instr;
-    end
+        A.Curr_Pc <= PC;
+        A.Curr_Instr <= Instr;
+        end
+
+    if (A.Curr_Instr[7-1:0] == 7'b1111111) begin
+          //A.Curr_Pc <= 0;
+          Halt <= 1'b1;  // Se Halt for 1, marque que Halt ocorreu
+        end
   end
 
   //--// The Hazard Detection Unit
@@ -132,7 +139,7 @@ module Datapath #(
 
   // ID_EX_Reg B;
   always @(posedge clk) begin
-    if ((reset) || (Reg_Stall) || (PcSel))   // initialization or flush or generate a NOP if hazard
+    if ((reset) || (Reg_Stall) || (PcSel) || (Halt))   // initialization or flush or generate a NOP if hazard
         begin
       B.ALUSrc <= 0;
       B.MemtoReg <= 0;
@@ -150,7 +157,7 @@ module Datapath #(
       B.ImmG <= 0;
       B.func3 <= 0;
       B.func7 <= 0;
-      B.Curr_Instr <= A.Curr_Instr;  //debug tmp
+      //B.Curr_Instr <= A.Curr_Instr;  //debug tmp
     end else begin
       B.ALUSrc <= ALUsrc;
       B.MemtoReg <= MemtoReg;
@@ -168,7 +175,7 @@ module Datapath #(
       B.ImmG <= ExtImm;
       B.func3 <= A.Curr_Instr[14:12];
       B.func7 <= A.Curr_Instr[31:25];
-      B.Curr_Instr <= A.Curr_Instr;  //debug tmp
+      //B.Curr_Instr <= A.Curr_Instr;  //debug tmp
     end
   end
 
@@ -257,7 +264,7 @@ module Datapath #(
       C.rd <= B.rd;
       C.func3 <= B.func3;
       C.func7 <= B.func7;
-      C.Curr_Instr <= B.Curr_Instr;  // debug tmp
+      //C.Curr_Instr <= B.Curr_Instr;  // debug tmp
     end
   end
 
@@ -299,7 +306,7 @@ module Datapath #(
       D.Alu_Result <= C.Alu_Result;
       D.MemReadData <= ReadData;
       D.rd <= C.rd;
-      D.Curr_Instr <= C.Curr_Instr;  //Debug Tmp
+     // D.Curr_Instr <= C.Curr_Instr;  //Debug Tmp
     end
   end
 

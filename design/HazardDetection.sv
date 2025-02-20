@@ -5,9 +5,7 @@ module HazardDetection (
     input logic [4:0] IF_ID_RS2,
     input logic [4:0] ID_EX_rd,
     input logic ID_EX_MemRead,
-    output logic stall
+    output logic stall          // Sinal de Stall
 );
-
-  assign stall = (ID_EX_MemRead) ? ((ID_EX_rd == IF_ID_RS1) || (ID_EX_rd == IF_ID_RS2)) : 0;
-
+    assign stall = (ID_EX_MemRead ) ? ((ID_EX_rd == IF_ID_RS1) || (ID_EX_rd == IF_ID_RS2)) : 0;
 endmodule
