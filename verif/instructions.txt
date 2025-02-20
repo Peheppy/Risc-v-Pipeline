@@ -1,13 +1,8 @@
 lw x4,1(x0)
 lw x6,0(x0)
 add x7,x4,x6
-sub x7,x7,x6
-slli x7,x7,4
-srli x7,x7,2
-srai x7,x7,2
+slli x6,x7,1
+add x3,x0,x0
+bne x6,x7,-8
+add x8,x7,x4
 halt x0,0
-add x7,x4,x6
-add x7,x4,x6
-add x7,x4,x6
-add x7,x4,x6
-add x7,x4,x6

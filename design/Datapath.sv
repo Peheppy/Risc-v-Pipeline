@@ -99,7 +99,7 @@ module Datapath #(
 
     if (A.Curr_Instr[7-1:0] == 7'b1111111) begin
           //A.Curr_Pc <= 0;
-          Halt <= 1'b1;  // Se Halt for 1, marque que Halt ocorreu
+          Halt <= 1'b1;  // marque que Halt ocorreu
         end
   end
 
@@ -139,7 +139,7 @@ module Datapath #(
 
   // ID_EX_Reg B;
   always @(posedge clk) begin
-    if ((reset) || (Reg_Stall) || (PcSel) || (Halt))   // initialization or flush or generate a NOP if hazard
+    if ((reset) || (Reg_Stall) || (PcSel) || (Halt))   // initialization or flush or generate a NOP if hazard or program ended
         begin
       B.ALUSrc <= 0;
       B.MemtoReg <= 0;
