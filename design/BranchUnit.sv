@@ -7,8 +7,8 @@ module BranchUnit #(
     input logic [31:0] Imm,
     input logic [5-1:0] rs1,
     input logic Branch,
-    input logic Jal,
-    input logic Jalr,
+    input logic JalrSet,
+    input logic RWSel,
     input logic [31:0] AluResult,
     output logic [31:0] PC_Imm,
     output logic [31:0] PC_Four,
@@ -21,9 +21,10 @@ module BranchUnit #(
 
   assign PC_Full = {23'b0, Cur_PC};
 
-  assign PC_Imm = (Jalr) ? rs1 + Imm : PC_Full + Imm; // alteracao
+  assign PC_Imm = (JalrSet) ? AluResult: PC_Full + Imm; // jalr, branch = rs1 + imm, jal, branch = PC + 4
+
   assign PC_Four = PC_Full + 32'b100;
-  assign Branch_Sel = ((Branch && AluResult[0]) || Jal || Jalr);  // 0:Branch is taken; 1:Branch is not taken
+  assign Branch_Sel = ((Branch && AluResult[0]) || RWSel);  // 0:Branch is taken; 1:Branch is not taken
 
   assign BrPC = (Branch_Sel) ? PC_Imm : 32'b0;  // Branch -> PC+Imm   // Otherwise, BrPC value is not important
   assign PcSel = Branch_Sel;  // 1:branch is taken; 0:branch is not taken(choose pc+4)
