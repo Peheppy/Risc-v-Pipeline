@@ -31,6 +31,8 @@ module alu#(
 		    ALUResult = SrcA << SrcB;
             4'b0101:        // Srli
 		    ALUResult = SrcA >> SrcB;
+            4'b1000:        // SLT
+		    ALUResult = (SrcA < SrcB) ? 1 : 0;
             4'b0111:        // Srai
 		    ALUResult = $signed(SrcA) >>> SrcB[5-1:0]; // porque o "funct7" de srcb e 01000, assim iria considerar um numero maior
             default:

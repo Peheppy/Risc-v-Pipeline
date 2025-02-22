@@ -29,5 +29,5 @@ module ALUController (
 
   assign Operation[3] = (ALUOp == 2'b01) ||  // BEQ
       ((ALUOp == 2'b01) && (Funct3 == 3'b001)) ||  // BNE
-      ((ALUOp == 2'b10) && (Funct3 == 3'b010));  // R\I-<
+      ((ALUOp == 2'b10) && (Funct3 == 3'b010));  // R\I-< SLT
 endmodule

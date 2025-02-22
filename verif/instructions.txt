@@ -1,8 +1,4 @@
 lw x4,1(x0)
-lw x6,0(x0)
-add x7,x4,x6
-slli x6,x7,1
-add x3,x0,x0
-bne x6,x7,-8
-add x8,x7,x4
+lw x6,2(x0)
+slt x3,x4,x6
 halt x0,0
