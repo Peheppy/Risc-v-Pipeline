@@ -18,6 +18,8 @@ module Datapath #(
     MemWrite,  // Register file or Immediate MUX // Memroy Writing Enable
     MemRead,  // Memroy Reading Enable
     Branch,  // Branch Enable
+    Jal, // Jal Enable
+    Jalr, // Jalr Enable
     input  logic [          1:0] ALUOp,
     input  logic [ALU_CC_W -1:0] ALU_CC,         // ALU Control Code ( input of the ALU )
     output logic [          6:0] opcode,
@@ -42,9 +44,9 @@ module Datapath #(
   logic [INS_W-1:0] Instr;
   logic [DATA_W-1:0] Reg1, Reg2;
   logic [DATA_W-1:0] ReadData;
-  logic [DATA_W-1:0] SrcB, ALUResult;
+  logic [DATA_W-1:0] SrcB, ALUResult, ALUResultF;
   logic [DATA_W-1:0] ExtImm, BrImm, Old_PC_Four, BrPC;
-  logic [DATA_W-1:0] WrmuxSrc;
+  logic [DATA_W-1:0] WrmuxSrc, testinho;
   logic PcSel;  // mux select / flush signal
   logic [1:0] FAmuxSel;
   logic [1:0] FBmuxSel;
@@ -148,6 +150,8 @@ module Datapath #(
       B.MemWrite <= 0;
       B.ALUOp <= 0;
       B.Branch <= 0;
+      B.Jal <= 0;
+      B.Jalr <= 0;
       B.Curr_Pc <= 0;
       B.RD_One <= 0;
       B.RD_Two <= 0;
@@ -166,6 +170,8 @@ module Datapath #(
       B.MemWrite <= MemWrite;
       B.ALUOp <= ALUOp;
       B.Branch <= Branch;
+      B.Jal <= Jal;
+      B.Jalr <= Jalr;
       B.Curr_Pc <= A.Curr_Pc;
       B.RD_One <= Reg1;
       B.RD_Two <= Reg2;
@@ -227,7 +233,10 @@ module Datapath #(
   BranchUnit #(9) brunit (
       B.Curr_Pc,
       B.ImmG,
+      B.RD_One,
       B.Branch,
+      B.Jal,
+      B.Jalr,
       ALUResult,
       BrImm,
       Old_PC_Four,
@@ -235,6 +244,13 @@ module Datapath #(
       PcSel
   );
 
+ /*  mux2 #(32) jalrdunit(
+    ALUResult,
+    Old_PC_Four,
+    B.Jal,
+    AluResultF
+  );
+ */
   // EX_MEM_Reg C;
   always @(posedge clk) begin
     if (reset)   // initialization
@@ -318,6 +334,13 @@ module Datapath #(
       WrmuxSrc
   );
 
-  assign WB_Data = WrmuxSrc;
+  mux2 #(32) teste(
+    WrmuxSrc,
+    D.Pc_Four,
+    Jal,
+    testinho
+  );
+
+  assign WB_Data = testinho;
 
 endmodule

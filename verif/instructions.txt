@@ -3,6 +3,7 @@ lw x6,0(x0)
 add x7,x4,x6
 slli x6,x7,1
 add x3,x0,x0
-bne x6,x7,-8
 add x8,x7,x4
+add x2,x4,x4
+jal x1,-8
 halt x0,0

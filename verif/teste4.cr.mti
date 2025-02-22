@@ -12,12 +12,15 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	flopr
 
-} {} {}} /home/pedro/Documentos/Faculdade/Infra-Hard/Projeto/design/BranchUnit.sv {1 {vlog -work work -sv -stats=none /home/pedro/Documentos/Faculdade/Infra-Hard/Projeto/design/BranchUnit.sv
+} {} {}} /home/pedro/Documentos/Faculdade/Infra-Hard/Projeto/design/Datapath.sv {2 {vlog -work work -sv -stats=none /home/pedro/Documentos/Faculdade/Infra-Hard/Projeto/design/Datapath.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module BranchUnit
+** Warning: /home/pedro/Documentos/Faculdade/Infra-Hard/Projeto/design/Datapath.sv(3): (vlog-13233) Design unit "Datapath_sv_unit" already exists and will be overwritten. Overwriting SystemVerilog $unit with different source files.
+-- Compiling package Datapath_sv_unit
+-- Importing package Pipe_Buf_Reg_PKG
+-- Compiling module Datapath
 
 Top level modules:
-	BranchUnit
+	Datapath
 
 } {} {}} /home/pedro/Documentos/Faculdade/Infra-Hard/Projeto/design/ramOnChipData.v {1 {vlog -work work -stats=none /home/pedro/Documentos/Faculdade/Infra-Hard/Projeto/design/ramOnChipData.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
@@ -32,6 +35,13 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 
 Top level modules:
 	Memoria32Data
+
+} {} {}} /home/pedro/Documentos/Faculdade/Infra-Hard/Projeto/design/alu.sv {1 {vlog -work work -sv -stats=none /home/pedro/Documentos/Faculdade/Infra-Hard/Projeto/design/alu.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module alu
+
+Top level modules:
+	alu
 
 } {} {}} /home/pedro/Documentos/Faculdade/Infra-Hard/Projeto/verif/tb_top.sv {1 {vlog -work work -sv -stats=none /home/pedro/Documentos/Faculdade/Infra-Hard/Projeto/verif/tb_top.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
@@ -61,19 +71,27 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	ForwardingUnit
 
+} {} {}} /home/pedro/Documentos/Faculdade/Infra-Hard/Projeto/design/imm_Gen.sv {2 {vlog -work work -sv -stats=none /home/pedro/Documentos/Faculdade/Infra-Hard/Projeto/design/imm_Gen.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module imm_Gen
+** Warning: /home/pedro/Documentos/Faculdade/Infra-Hard/Projeto/design/imm_Gen.sv(24): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+
+Top level modules:
+	imm_Gen
+
+} {} {}} /home/pedro/Documentos/Faculdade/Infra-Hard/Projeto/design/Controller.sv {1 {vlog -work work -sv -stats=none /home/pedro/Documentos/Faculdade/Infra-Hard/Projeto/design/Controller.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Controller
+
+Top level modules:
+	Controller
+
 } {} {}} /home/pedro/Documentos/Faculdade/Infra-Hard/Projeto/design/mux2.sv {1 {vlog -work work -sv -stats=none /home/pedro/Documentos/Faculdade/Infra-Hard/Projeto/design/mux2.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module mux2
 
 Top level modules:
 	mux2
-
-} {} {}} /home/pedro/Documentos/Faculdade/Infra-Hard/Projeto/design/imm_Gen.sv {1 {vlog -work work -sv -stats=none /home/pedro/Documentos/Faculdade/Infra-Hard/Projeto/design/imm_Gen.sv
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module imm_Gen
-
-Top level modules:
-	imm_Gen
 
 } {} {}} /home/pedro/Documentos/Faculdade/Infra-Hard/Projeto/design/RegPack.sv {1 {vlog -work work -sv -stats=none /home/pedro/Documentos/Faculdade/Infra-Hard/Projeto/design/RegPack.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
@@ -82,12 +100,19 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	--none--
 
-} {} {}} /home/pedro/Documentos/Faculdade/Infra-Hard/Projeto/design/mux4.sv {1 {vlog -work work -sv -stats=none /home/pedro/Documentos/Faculdade/Infra-Hard/Projeto/design/mux4.sv
+} {} {}} /home/pedro/Documentos/Faculdade/Infra-Hard/Projeto/design/ALUController.sv {1 {vlog -work work -sv -stats=none /home/pedro/Documentos/Faculdade/Infra-Hard/Projeto/design/ALUController.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module mux4
+-- Compiling module ALUController
 
 Top level modules:
-	mux4
+	ALUController
+
+} {} {}} /home/pedro/Documentos/Faculdade/Infra-Hard/Projeto/design/RISC_V.sv {1 {vlog -work work -sv -stats=none /home/pedro/Documentos/Faculdade/Infra-Hard/Projeto/design/RISC_V.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module riscv
+
+Top level modules:
+	riscv
 
 } {} {}} /home/pedro/Documentos/Faculdade/Infra-Hard/Projeto/design/RegFile.sv {1 {vlog -work work -sv -stats=none /home/pedro/Documentos/Faculdade/Infra-Hard/Projeto/design/RegFile.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
@@ -96,12 +121,12 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	RegFile
 
-} {} {}} /home/pedro/Documentos/Faculdade/Infra-Hard/Projeto/design/RISC_V.sv {1 {vlog -work work -sv -stats=none /home/pedro/Documentos/Faculdade/Infra-Hard/Projeto/design/RISC_V.sv
+} {} {}} /home/pedro/Documentos/Faculdade/Infra-Hard/Projeto/design/mux4.sv {1 {vlog -work work -sv -stats=none /home/pedro/Documentos/Faculdade/Infra-Hard/Projeto/design/mux4.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module riscv
+-- Compiling module mux4
 
 Top level modules:
-	riscv
+	mux4
 
 } {} {}} /home/pedro/Documentos/Faculdade/Infra-Hard/Projeto/design/Memoria32.sv {1 {vlog -work work -sv -stats=none /home/pedro/Documentos/Faculdade/Infra-Hard/Projeto/design/Memoria32.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020

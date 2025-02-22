@@ -1,10 +1,23 @@
 # Loading project teste4
 # Compile of alu.sv was successful.
+# Compile of ALUController.sv was successful.
+# Compile of Controller.sv was successful.
+# Compile of ForwardingUnit.sv was successful.
+# Compile of imm_Gen.sv was successful.
+# Compile of instructionmemory.sv was successful.
+# Compile of mux2.sv was successful.
+# Compile of mux4.sv was successful.
+# Compile of ramOnChip32.v was successful.
+# Compile of RegFile.sv was successful.
+# Compile of RegPack.sv was successful.
+# Compile of RISC_V.sv was successful.
+# 12 compiles, 0 failed with no errors.
+# Compile of BranchUnit.sv was successful.
 # Compile of Datapath.sv was successful with warnings.
 do runtb_top
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:19:42 on Feb 20,2025
+# Start time: 20:06:10 on Feb 21,2025
 # vlog -reportprogress 300 -f compile_verilog 
 # -- Compiling module adder
 # -- Compiling module ramOnChip32
@@ -33,464 +46,10 @@ do runtb_top
 # 
 # Top level modules:
 # 	tb_top
-# End time: 10:19:43 on Feb 20,2025, Elapsed time: 0:00:01
+# End time: 20:06:10 on Feb 21,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -gui -L altera_mf_ver work.tb_top 
-# Start time: 10:19:43 on Feb 20,2025
-# Loading sv_std.std
-# Loading work.tb_top
-# Loading work.riscv
-# Loading work.Controller
-# Loading work.ALUController
-# Loading work.Pipe_Buf_Reg_PKG
-# Loading work.Datapath_sv_unit
-# Loading work.Datapath
-# Loading work.adder
-# Loading work.mux2
-# Loading work.flopr
-# Loading work.instructionmemory
-# Loading work.Memoria32
-# Loading work.ramOnChip32
-# Loading altera_mf_ver.altsyncram
-# Loading work.HazardDetection
-# Loading work.RegFile
-# Loading work.imm_Gen
-# Loading work.ForwardingUnit
-# Loading work.mux4
-# Loading work.alu
-# Loading work.BranchUnit
-# Loading work.datamemory
-# Loading work.Memoria32Data
-# Loading work.ramOnChipData
-# Loading altera_mf_ver.altsyncram_body
-# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
-# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
-# hexadecimal
-# unsigned
-# hexadecimal
-# unsigned
-# unsigned
-# unsigned
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock0.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock1.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock2.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock3.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock0.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock1.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock2.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock3.altsyncram_component.m_default.altsyncram_inst
-#                   35: Memory [  1] read with value: [xxxxxxxx] | [         x]
-# 
-#                   35: Memory [  1] read with value: [00000202] | [       514]
-# 
-#                   40: Memory [  1] read with value: [00000002] | [         2]
-# 
-#                   45: Memory [  0] read with value: [00000002] | [         2]
-# 
-#                   45: Register [ 4] written with value: [00000002] | [         2]
-# 
-#                   50: Memory [  0] read with value: [00000202] | [       514]
-# 
-#                   55: Register [ 6] written with value: [00000202] | [       514]
-# 
-#                   75: Register [ 7] written with value: [00000204] | [       516]
-# 
-#                   85: Register [ 7] written with value: [00000002] | [         2]
-# 
-#                   95: Register [ 7] written with value: [00000020] | [        32]
-# 
-#                  105: Register [ 7] written with value: [00000008] | [         8]
-# 
-#                  115: Register [ 7] written with value: [00000002] | [         2]
-# 
-# ** Note: $stop    : ./tb_top.sv(43)
-#    Time: 510 ns  Iteration: 0  Instance: /tb_top
-# Break in Module tb_top at ./tb_top.sv line 43
-do runtb_top
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:21:28 on Feb 20,2025
-# vlog -reportprogress 300 -f compile_verilog 
-# -- Compiling module adder
-# -- Compiling module ramOnChip32
-# -- Compiling module ramOnChipData
-# -- Compiling module Memoria32
-# -- Compiling module Memoria32Data
-# -- Compiling package Pipe_Buf_Reg_PKG
-# -- Compiling module RegFile
-# -- Compiling module alu
-# -- Compiling module ALUController
-# -- Compiling module BranchUnit
-# -- Compiling module Controller
-# -- Compiling module flopr
-# -- Compiling module ForwardingUnit
-# -- Compiling module HazardDetection
-# -- Compiling module imm_Gen
-# -- Compiling module mux2
-# -- Compiling module mux4
-# -- Compiling module datamemory
-# -- Compiling module instructionmemory
-# -- Compiling package Datapath_sv_unit
-# -- Importing package Pipe_Buf_Reg_PKG
-# -- Compiling module Datapath
-# -- Compiling module riscv
-# -- Compiling module tb_top
-# 
-# Top level modules:
-# 	tb_top
-# End time: 10:21:28 on Feb 20,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 10:21:28 on Feb 20,2025, Elapsed time: 0:01:45
-# Errors: 0, Warnings: 3
-# vsim -gui -L altera_mf_ver work.tb_top 
-# Start time: 10:21:28 on Feb 20,2025
-# Loading sv_std.std
-# Loading work.tb_top
-# Loading work.riscv
-# Loading work.Controller
-# Loading work.ALUController
-# Loading work.Pipe_Buf_Reg_PKG
-# Loading work.Datapath_sv_unit
-# Loading work.Datapath
-# Loading work.adder
-# Loading work.mux2
-# Loading work.flopr
-# Loading work.instructionmemory
-# Loading work.Memoria32
-# Loading work.ramOnChip32
-# Loading altera_mf_ver.altsyncram
-# Loading work.HazardDetection
-# Loading work.RegFile
-# Loading work.imm_Gen
-# Loading work.ForwardingUnit
-# Loading work.mux4
-# Loading work.alu
-# Loading work.BranchUnit
-# Loading work.datamemory
-# Loading work.Memoria32Data
-# Loading work.ramOnChipData
-# Loading altera_mf_ver.altsyncram_body
-# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
-# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
-# hexadecimal
-# unsigned
-# hexadecimal
-# unsigned
-# unsigned
-# unsigned
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock0.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock1.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock2.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock3.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock0.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock1.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock2.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock3.altsyncram_component.m_default.altsyncram_inst
-#                   35: Memory [  1] read with value: [xxxxxxxx] | [         x]
-# 
-#                   35: Memory [  1] read with value: [00000202] | [       514]
-# 
-#                   40: Memory [  1] read with value: [00000002] | [         2]
-# 
-#                   45: Memory [  0] read with value: [00000002] | [         2]
-# 
-#                   45: Register [ 4] written with value: [00000002] | [         2]
-# 
-#                   50: Memory [  0] read with value: [00000202] | [       514]
-# 
-#                   55: Register [ 6] written with value: [00000202] | [       514]
-# 
-#                   75: Register [ 7] written with value: [00000204] | [       516]
-# 
-#                   85: Register [ 7] written with value: [00000002] | [         2]
-# 
-#                   95: Register [ 7] written with value: [00000020] | [        32]
-# 
-#                  105: Register [ 7] written with value: [00000008] | [         8]
-# 
-#                  115: Register [ 6] written with value: [00000002] | [         2]
-# 
-# ** Note: $stop    : ./tb_top.sv(43)
-#    Time: 510 ns  Iteration: 0  Instance: /tb_top
-# Break in Module tb_top at ./tb_top.sv line 43
-do runtb_top
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:49:13 on Feb 20,2025
-# vlog -reportprogress 300 -f compile_verilog 
-# -- Compiling module adder
-# -- Compiling module ramOnChip32
-# -- Compiling module ramOnChipData
-# -- Compiling module Memoria32
-# -- Compiling module Memoria32Data
-# -- Compiling package Pipe_Buf_Reg_PKG
-# -- Compiling module RegFile
-# -- Compiling module alu
-# -- Compiling module ALUController
-# -- Compiling module BranchUnit
-# -- Compiling module Controller
-# -- Compiling module flopr
-# -- Compiling module ForwardingUnit
-# -- Compiling module HazardDetection
-# -- Compiling module imm_Gen
-# -- Compiling module mux2
-# -- Compiling module mux4
-# -- Compiling module datamemory
-# -- Compiling module instructionmemory
-# -- Compiling package Datapath_sv_unit
-# -- Importing package Pipe_Buf_Reg_PKG
-# -- Compiling module Datapath
-# -- Compiling module riscv
-# -- Compiling module tb_top
-# 
-# Top level modules:
-# 	tb_top
-# End time: 10:49:14 on Feb 20,2025, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# End time: 10:49:14 on Feb 20,2025, Elapsed time: 0:27:46
-# Errors: 0, Warnings: 1
-# vsim -gui -L altera_mf_ver work.tb_top 
-# Start time: 10:49:14 on Feb 20,2025
-# Loading sv_std.std
-# Loading work.tb_top
-# Loading work.riscv
-# Loading work.Controller
-# Loading work.ALUController
-# Loading work.Pipe_Buf_Reg_PKG
-# Loading work.Datapath_sv_unit
-# Loading work.Datapath
-# Loading work.adder
-# Loading work.mux2
-# Loading work.flopr
-# Loading work.instructionmemory
-# Loading work.Memoria32
-# Loading work.ramOnChip32
-# Loading altera_mf_ver.altsyncram
-# Loading work.HazardDetection
-# Loading work.RegFile
-# Loading work.imm_Gen
-# Loading work.ForwardingUnit
-# Loading work.mux4
-# Loading work.alu
-# Loading work.BranchUnit
-# Loading work.datamemory
-# Loading work.Memoria32Data
-# Loading work.ramOnChipData
-# Loading altera_mf_ver.altsyncram_body
-# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
-# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
-# hexadecimal
-# unsigned
-# hexadecimal
-# unsigned
-# unsigned
-# unsigned
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# hexadecimal
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock0.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock1.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock2.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock3.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock0.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock1.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock2.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock3.altsyncram_component.m_default.altsyncram_inst
-#                   35: Memory [  1] read with value: [xxxxxxxx] | [         x]
-# 
-#                   35: Memory [  1] read with value: [00000202] | [       514]
-# 
-#                   40: Memory [  1] read with value: [00000002] | [         2]
-# 
-#                   45: Memory [  0] read with value: [00000002] | [         2]
-# 
-#                   45: Register [ 4] written with value: [00000002] | [         2]
-# 
-#                   50: Memory [  0] read with value: [00000202] | [       514]
-# 
-#                   55: Register [ 6] written with value: [00000202] | [       514]
-# 
-#                   75: Register [ 7] written with value: [00000204] | [       516]
-# 
-#                   85: Register [ 7] written with value: [00000002] | [         2]
-# 
-#                   95: Register [ 7] written with value: [00000020] | [        32]
-# 
-#                  105: Register [ 7] written with value: [00000008] | [         8]
-# 
-#                  115: Register [ 6] written with value: [00000002] | [         2]
-# 
-#                  155: Register [ 7] written with value: [00000002] | [         2]
-# 
-#                  165: Register [ 6] written with value: [00000000] | [         0]
-# 
-#                  205: Register [ 7] written with value: [00000000] | [         0]
-# 
-#                  215: Register [ 6] written with value: [00000000] | [         0]
-# 
-#                  235: Register [ 8] written with value: [00000002] | [         2]
-# 
-# ** Note: $stop    : ./tb_top.sv(43)
-#    Time: 510 ns  Iteration: 0  Instance: /tb_top
-# Break in Module tb_top at ./tb_top.sv line 43
-do runtb_top
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:52:26 on Feb 20,2025
-# vlog -reportprogress 300 -f compile_verilog 
-# -- Compiling module adder
-# -- Compiling module ramOnChip32
-# -- Compiling module ramOnChipData
-# -- Compiling module Memoria32
-# -- Compiling module Memoria32Data
-# -- Compiling package Pipe_Buf_Reg_PKG
-# -- Compiling module RegFile
-# -- Compiling module alu
-# -- Compiling module ALUController
-# -- Compiling module BranchUnit
-# -- Compiling module Controller
-# -- Compiling module flopr
-# -- Compiling module ForwardingUnit
-# -- Compiling module HazardDetection
-# -- Compiling module imm_Gen
-# -- Compiling module mux2
-# -- Compiling module mux4
-# -- Compiling module datamemory
-# -- Compiling module instructionmemory
-# -- Compiling package Datapath_sv_unit
-# -- Importing package Pipe_Buf_Reg_PKG
-# -- Compiling module Datapath
-# -- Compiling module riscv
-# -- Compiling module tb_top
-# 
-# Top level modules:
-# 	tb_top
-# End time: 10:52:26 on Feb 20,2025, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 10:52:26 on Feb 20,2025, Elapsed time: 0:03:12
-# Errors: 0, Warnings: 1
-# vsim -gui -L altera_mf_ver work.tb_top 
-# Start time: 10:52:27 on Feb 20,2025
+# Start time: 20:06:10 on Feb 21,2025
 # Loading sv_std.std
 # Loading work.tb_top
 # Loading work.riscv
@@ -625,6 +184,3741 @@ do runtb_top
 #                  485: Register [ 6] written with value: [00000408] | [      1032]
 # 
 #                  495: Register [ 3] written with value: [00000000] | [         0]
+# 
+# ** Note: $stop    : ./tb_top.sv(43)
+#    Time: 510 ns  Iteration: 0  Instance: /tb_top
+# Break in Module tb_top at ./tb_top.sv line 43
+do runtb_top
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:07:01 on Feb 21,2025
+# vlog -reportprogress 300 -f compile_verilog 
+# -- Compiling module adder
+# -- Compiling module ramOnChip32
+# -- Compiling module ramOnChipData
+# -- Compiling module Memoria32
+# -- Compiling module Memoria32Data
+# -- Compiling package Pipe_Buf_Reg_PKG
+# -- Compiling module RegFile
+# -- Compiling module alu
+# -- Compiling module ALUController
+# -- Compiling module BranchUnit
+# -- Compiling module Controller
+# -- Compiling module flopr
+# -- Compiling module ForwardingUnit
+# -- Compiling module HazardDetection
+# -- Compiling module imm_Gen
+# -- Compiling module mux2
+# -- Compiling module mux4
+# -- Compiling module datamemory
+# -- Compiling module instructionmemory
+# -- Compiling package Datapath_sv_unit
+# -- Importing package Pipe_Buf_Reg_PKG
+# -- Compiling module Datapath
+# -- Compiling module riscv
+# -- Compiling module tb_top
+# 
+# Top level modules:
+# 	tb_top
+# End time: 20:07:01 on Feb 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 20:07:02 on Feb 21,2025, Elapsed time: 0:00:52
+# Errors: 0, Warnings: 4
+# vsim -gui -L altera_mf_ver work.tb_top 
+# Start time: 20:07:02 on Feb 21,2025
+# Loading sv_std.std
+# Loading work.tb_top
+# Loading work.riscv
+# Loading work.Controller
+# Loading work.ALUController
+# Loading work.Pipe_Buf_Reg_PKG
+# Loading work.Datapath_sv_unit
+# Loading work.Datapath
+# Loading work.adder
+# Loading work.mux2
+# Loading work.flopr
+# Loading work.instructionmemory
+# Loading work.Memoria32
+# Loading work.ramOnChip32
+# Loading altera_mf_ver.altsyncram
+# Loading work.HazardDetection
+# Loading work.RegFile
+# Loading work.imm_Gen
+# Loading work.ForwardingUnit
+# Loading work.mux4
+# Loading work.alu
+# Loading work.BranchUnit
+# Loading work.datamemory
+# Loading work.Memoria32Data
+# Loading work.ramOnChipData
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# hexadecimal
+# unsigned
+# hexadecimal
+# unsigned
+# unsigned
+# unsigned
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock0.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock1.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock2.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock3.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock0.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock1.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock2.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock3.altsyncram_component.m_default.altsyncram_inst
+#                   35: Memory [  1] read with value: [xxxxxxxx] | [         x]
+# 
+#                   35: Memory [  1] read with value: [00000202] | [       514]
+# 
+#                   40: Memory [  1] read with value: [00000002] | [         2]
+# 
+#                   45: Memory [  0] read with value: [00000002] | [         2]
+# 
+#                   45: Register [ 4] written with value: [00000002] | [         2]
+# 
+#                   50: Memory [  0] read with value: [00000202] | [       514]
+# 
+#                   55: Register [ 6] written with value: [00000202] | [       514]
+# 
+#                   75: Register [ 7] written with value: [00000204] | [       516]
+# 
+#                   85: Register [ 6] written with value: [00000408] | [      1032]
+# 
+#                   95: Register [ 3] written with value: [00000000] | [         0]
+# 
+#                  135: Register [ 6] written with value: [00000408] | [      1032]
+# 
+#                  145: Register [ 3] written with value: [00000000] | [         0]
+# 
+#                  185: Register [ 6] written with value: [00000408] | [      1032]
+# 
+#                  195: Register [ 3] written with value: [00000000] | [         0]
+# 
+#                  235: Register [ 6] written with value: [00000408] | [      1032]
+# 
+#                  245: Register [ 3] written with value: [00000000] | [         0]
+# 
+#                  285: Register [ 6] written with value: [00000408] | [      1032]
+# 
+#                  295: Register [ 3] written with value: [00000000] | [         0]
+# 
+#                  335: Register [ 6] written with value: [00000408] | [      1032]
+# 
+#                  345: Register [ 3] written with value: [00000000] | [         0]
+# 
+#                  385: Register [ 6] written with value: [00000408] | [      1032]
+# 
+#                  395: Register [ 3] written with value: [00000000] | [         0]
+# 
+#                  435: Register [ 6] written with value: [00000408] | [      1032]
+# 
+#                  445: Register [ 3] written with value: [00000000] | [         0]
+# 
+#                  485: Register [ 6] written with value: [00000408] | [      1032]
+# 
+#                  495: Register [ 3] written with value: [00000000] | [         0]
+# 
+# ** Note: $stop    : ./tb_top.sv(43)
+#    Time: 510 ns  Iteration: 0  Instance: /tb_top
+# Break in Module tb_top at ./tb_top.sv line 43
+# Compile of ALUController.sv was successful.
+# Compile of Controller.sv was successful.
+# Compile of imm_Gen.sv was successful.
+# Compile of mux4.sv was successful.
+# Compile of RegFile.sv was successful.
+# Compile of RegPack.sv was successful.
+# Compile of RISC_V.sv was successful.
+# 7 compiles, 0 failed with no errors.
+# Compile of BranchUnit.sv was successful.
+# Compile of Datapath.sv was successful with warnings.
+do runtb_top
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:05:41 on Feb 21,2025
+# vlog -reportprogress 300 -f compile_verilog 
+# -- Compiling module adder
+# -- Compiling module ramOnChip32
+# -- Compiling module ramOnChipData
+# -- Compiling module Memoria32
+# -- Compiling module Memoria32Data
+# -- Compiling package Pipe_Buf_Reg_PKG
+# -- Compiling module RegFile
+# -- Compiling module alu
+# -- Compiling module ALUController
+# -- Compiling module BranchUnit
+# -- Compiling module Controller
+# -- Compiling module flopr
+# -- Compiling module ForwardingUnit
+# -- Compiling module HazardDetection
+# -- Compiling module imm_Gen
+# -- Compiling module mux2
+# -- Compiling module mux4
+# -- Compiling module datamemory
+# -- Compiling module instructionmemory
+# -- Compiling package Datapath_sv_unit
+# -- Importing package Pipe_Buf_Reg_PKG
+# -- Compiling module Datapath
+# -- Compiling module riscv
+# -- Compiling module tb_top
+# 
+# Top level modules:
+# 	tb_top
+# End time: 21:05:41 on Feb 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 21:05:42 on Feb 21,2025, Elapsed time: 0:58:40
+# Errors: 0, Warnings: 4
+# vsim -gui -L altera_mf_ver work.tb_top 
+# Start time: 21:05:42 on Feb 21,2025
+# Loading sv_std.std
+# Loading work.tb_top
+# Loading work.riscv
+# Loading work.Controller
+# Loading work.ALUController
+# Loading work.Pipe_Buf_Reg_PKG
+# Loading work.Datapath_sv_unit
+# Loading work.Datapath
+# Loading work.adder
+# Loading work.mux2
+# Loading work.flopr
+# Loading work.instructionmemory
+# Loading work.Memoria32
+# Loading work.ramOnChip32
+# Loading altera_mf_ver.altsyncram
+# Loading work.HazardDetection
+# Loading work.RegFile
+# Loading work.imm_Gen
+# Loading work.ForwardingUnit
+# Loading work.mux4
+# Loading work.alu
+# Loading work.BranchUnit
+# Loading work.datamemory
+# Loading work.Memoria32Data
+# Loading work.ramOnChipData
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (32) for port 'rs1'. The port definition is at: ./../design/BranchUnit.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/brunit File: ./../design/Datapath.sv Line: 233
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (1) for port 'd0'. The port definition is at: ./../design/mux2.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/jalrdunit File: ./../design/Datapath.sv Line: 247
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (32) for port 'd1'. The port definition is at: ./../design/mux2.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/jalrdunit File: ./../design/Datapath.sv Line: 247
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (1) for port 'y'. The port definition is at: ./../design/mux2.sv(9).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/jalrdunit File: ./../design/Datapath.sv Line: 247
+# hexadecimal
+# unsigned
+# hexadecimal
+# unsigned
+# unsigned
+# unsigned
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock0.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock1.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock2.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock3.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock0.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock1.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock2.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock3.altsyncram_component.m_default.altsyncram_inst
+#                   35: Memory [  Z] read with value: [xxxxxxxx] | [         x]
+# 
+#                   45: Register [ 4] written with value: [xxxxxxxx] | [         x]
+# 
+#                   55: Register [ 6] written with value: [xxxxxxxx] | [         x]
+# 
+#                   75: Register [ 7] written with value: [0000000Z] | [         Z]
+# 
+#                   85: Register [ 6] written with value: [0000000Z] | [         Z]
+# 
+#                   95: Register [ 3] written with value: [0000000Z] | [         Z]
+# 
+#                  105: Register [ 8] written with value: [0000000Z] | [         Z]
+# 
+#                  115: Register [ 1] written with value: [0000000Z] | [         Z]
+# 
+#                  125: Register [ 1] written with value: [00000000] | [         0]
+# 
+# ** Note: $stop    : ./tb_top.sv(43)
+#    Time: 510 ns  Iteration: 0  Instance: /tb_top
+# Break in Module tb_top at ./tb_top.sv line 43
+do runtb_top
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:06:32 on Feb 21,2025
+# vlog -reportprogress 300 -f compile_verilog 
+# -- Compiling module adder
+# -- Compiling module ramOnChip32
+# -- Compiling module ramOnChipData
+# -- Compiling module Memoria32
+# -- Compiling module Memoria32Data
+# -- Compiling package Pipe_Buf_Reg_PKG
+# -- Compiling module RegFile
+# -- Compiling module alu
+# -- Compiling module ALUController
+# -- Compiling module BranchUnit
+# -- Compiling module Controller
+# -- Compiling module flopr
+# -- Compiling module ForwardingUnit
+# -- Compiling module HazardDetection
+# -- Compiling module imm_Gen
+# -- Compiling module mux2
+# -- Compiling module mux4
+# -- Compiling module datamemory
+# -- Compiling module instructionmemory
+# -- Compiling package Datapath_sv_unit
+# -- Importing package Pipe_Buf_Reg_PKG
+# -- Compiling module Datapath
+# -- Compiling module riscv
+# -- Compiling module tb_top
+# 
+# Top level modules:
+# 	tb_top
+# End time: 21:06:32 on Feb 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 21:06:33 on Feb 21,2025, Elapsed time: 0:00:51
+# Errors: 0, Warnings: 5
+# vsim -gui -L altera_mf_ver work.tb_top 
+# Start time: 21:06:33 on Feb 21,2025
+# Loading sv_std.std
+# Loading work.tb_top
+# Loading work.riscv
+# Loading work.Controller
+# Loading work.ALUController
+# Loading work.Pipe_Buf_Reg_PKG
+# Loading work.Datapath_sv_unit
+# Loading work.Datapath
+# Loading work.adder
+# Loading work.mux2
+# Loading work.flopr
+# Loading work.instructionmemory
+# Loading work.Memoria32
+# Loading work.ramOnChip32
+# Loading altera_mf_ver.altsyncram
+# Loading work.HazardDetection
+# Loading work.RegFile
+# Loading work.imm_Gen
+# Loading work.ForwardingUnit
+# Loading work.mux4
+# Loading work.alu
+# Loading work.BranchUnit
+# Loading work.datamemory
+# Loading work.Memoria32Data
+# Loading work.ramOnChipData
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (32) for port 'rs1'. The port definition is at: ./../design/BranchUnit.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/brunit File: ./../design/Datapath.sv Line: 233
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (1) for port 'd0'. The port definition is at: ./../design/mux2.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/jalrdunit File: ./../design/Datapath.sv Line: 247
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (32) for port 'd1'. The port definition is at: ./../design/mux2.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/jalrdunit File: ./../design/Datapath.sv Line: 247
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (1) for port 'y'. The port definition is at: ./../design/mux2.sv(9).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/jalrdunit File: ./../design/Datapath.sv Line: 247
+# hexadecimal
+# unsigned
+# hexadecimal
+# unsigned
+# unsigned
+# unsigned
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock0.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock1.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock2.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock3.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock0.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock1.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock2.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock3.altsyncram_component.m_default.altsyncram_inst
+#                   35: Memory [  Z] read with value: [xxxxxxxx] | [         x]
+# 
+#                   45: Register [ 4] written with value: [xxxxxxxx] | [         x]
+# 
+#                   55: Register [ 6] written with value: [xxxxxxxx] | [         x]
+# 
+#                   75: Register [ 7] written with value: [0000000Z] | [         Z]
+# 
+#                   85: Register [ 6] written with value: [0000000Z] | [         Z]
+# 
+#                   95: Register [ 3] written with value: [0000000Z] | [         Z]
+# 
+#                  105: Register [ 8] written with value: [0000000Z] | [         Z]
+# 
+#                  115: Register [ 1] written with value: [0000000Z] | [         Z]
+# 
+#                  125: Register [ 1] written with value: [00000000] | [         0]
+# 
+# ** Note: $stop    : ./tb_top.sv(43)
+#    Time: 510 ns  Iteration: 0  Instance: /tb_top
+# Break in Module tb_top at ./tb_top.sv line 43
+do runtb_top
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:07:08 on Feb 21,2025
+# vlog -reportprogress 300 -f compile_verilog 
+# -- Compiling module adder
+# -- Compiling module ramOnChip32
+# -- Compiling module ramOnChipData
+# -- Compiling module Memoria32
+# -- Compiling module Memoria32Data
+# -- Compiling package Pipe_Buf_Reg_PKG
+# -- Compiling module RegFile
+# -- Compiling module alu
+# -- Compiling module ALUController
+# -- Compiling module BranchUnit
+# -- Compiling module Controller
+# -- Compiling module flopr
+# -- Compiling module ForwardingUnit
+# -- Compiling module HazardDetection
+# -- Compiling module imm_Gen
+# -- Compiling module mux2
+# -- Compiling module mux4
+# -- Compiling module datamemory
+# -- Compiling module instructionmemory
+# -- Compiling package Datapath_sv_unit
+# -- Importing package Pipe_Buf_Reg_PKG
+# -- Compiling module Datapath
+# -- Compiling module riscv
+# -- Compiling module tb_top
+# 
+# Top level modules:
+# 	tb_top
+# End time: 21:07:08 on Feb 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 21:07:09 on Feb 21,2025, Elapsed time: 0:00:36
+# Errors: 0, Warnings: 5
+# vsim -gui -L altera_mf_ver work.tb_top 
+# Start time: 21:07:09 on Feb 21,2025
+# Loading sv_std.std
+# Loading work.tb_top
+# Loading work.riscv
+# Loading work.Controller
+# Loading work.ALUController
+# Loading work.Pipe_Buf_Reg_PKG
+# Loading work.Datapath_sv_unit
+# Loading work.Datapath
+# Loading work.adder
+# Loading work.mux2
+# Loading work.flopr
+# Loading work.instructionmemory
+# Loading work.Memoria32
+# Loading work.ramOnChip32
+# Loading altera_mf_ver.altsyncram
+# Loading work.HazardDetection
+# Loading work.RegFile
+# Loading work.imm_Gen
+# Loading work.ForwardingUnit
+# Loading work.mux4
+# Loading work.alu
+# Loading work.BranchUnit
+# Loading work.datamemory
+# Loading work.Memoria32Data
+# Loading work.ramOnChipData
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (32) for port 'rs1'. The port definition is at: ./../design/BranchUnit.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/brunit File: ./../design/Datapath.sv Line: 233
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (1) for port 'd0'. The port definition is at: ./../design/mux2.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/jalrdunit File: ./../design/Datapath.sv Line: 247
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (32) for port 'd1'. The port definition is at: ./../design/mux2.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/jalrdunit File: ./../design/Datapath.sv Line: 247
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (1) for port 'y'. The port definition is at: ./../design/mux2.sv(9).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/jalrdunit File: ./../design/Datapath.sv Line: 247
+# hexadecimal
+# unsigned
+# hexadecimal
+# unsigned
+# unsigned
+# unsigned
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock0.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock1.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock2.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock3.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock0.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock1.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock2.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock3.altsyncram_component.m_default.altsyncram_inst
+#                   35: Memory [  Z] read with value: [xxxxxxxx] | [         x]
+# 
+#                   45: Register [ 4] written with value: [xxxxxxxx] | [         x]
+# 
+#                   55: Register [ 6] written with value: [xxxxxxxx] | [         x]
+# 
+#                   75: Register [ 7] written with value: [0000000Z] | [         Z]
+# 
+#                   85: Register [ 6] written with value: [0000000Z] | [         Z]
+# 
+#                   95: Register [ 3] written with value: [0000000Z] | [         Z]
+# 
+#                  105: Register [ 8] written with value: [0000000Z] | [         Z]
+# 
+#                  115: Register [ 1] written with value: [0000000Z] | [         Z]
+# 
+#                  125: Register [ 1] written with value: [00000000] | [         0]
+# 
+#                  155: Register [ 1] written with value: [00000000] | [         0]
+# 
+#                  185: Register [ 1] written with value: [00000000] | [         0]
+# 
+#                  215: Register [ 1] written with value: [00000000] | [         0]
+# 
+#                  245: Register [ 1] written with value: [00000000] | [         0]
+# 
+#                  275: Register [ 1] written with value: [00000000] | [         0]
+# 
+#                  305: Register [ 1] written with value: [00000000] | [         0]
+# 
+#                  335: Register [ 1] written with value: [00000000] | [         0]
+# 
+#                  365: Register [ 1] written with value: [00000000] | [         0]
+# 
+#                  395: Register [ 1] written with value: [00000000] | [         0]
+# 
+#                  425: Register [ 1] written with value: [00000000] | [         0]
+# 
+#                  455: Register [ 1] written with value: [00000000] | [         0]
+# 
+#                  485: Register [ 1] written with value: [00000000] | [         0]
+# 
+# ** Note: $stop    : ./tb_top.sv(43)
+#    Time: 510 ns  Iteration: 0  Instance: /tb_top
+# Break in Module tb_top at ./tb_top.sv line 43
+do runtb_top
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:08:04 on Feb 21,2025
+# vlog -reportprogress 300 -f compile_verilog 
+# -- Compiling module adder
+# -- Compiling module ramOnChip32
+# -- Compiling module ramOnChipData
+# -- Compiling module Memoria32
+# -- Compiling module Memoria32Data
+# -- Compiling package Pipe_Buf_Reg_PKG
+# -- Compiling module RegFile
+# -- Compiling module alu
+# -- Compiling module ALUController
+# -- Compiling module BranchUnit
+# -- Compiling module Controller
+# -- Compiling module flopr
+# -- Compiling module ForwardingUnit
+# -- Compiling module HazardDetection
+# -- Compiling module imm_Gen
+# -- Compiling module mux2
+# -- Compiling module mux4
+# -- Compiling module datamemory
+# -- Compiling module instructionmemory
+# -- Compiling package Datapath_sv_unit
+# -- Importing package Pipe_Buf_Reg_PKG
+# -- Compiling module Datapath
+# -- Compiling module riscv
+# -- Compiling module tb_top
+# 
+# Top level modules:
+# 	tb_top
+# End time: 21:08:05 on Feb 21,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 21:08:05 on Feb 21,2025, Elapsed time: 0:00:56
+# Errors: 0, Warnings: 5
+# vsim -gui -L altera_mf_ver work.tb_top 
+# Start time: 21:08:05 on Feb 21,2025
+# Loading sv_std.std
+# Loading work.tb_top
+# Loading work.riscv
+# Loading work.Controller
+# Loading work.ALUController
+# Loading work.Pipe_Buf_Reg_PKG
+# Loading work.Datapath_sv_unit
+# Loading work.Datapath
+# Loading work.adder
+# Loading work.mux2
+# Loading work.flopr
+# Loading work.instructionmemory
+# Loading work.Memoria32
+# Loading work.ramOnChip32
+# Loading altera_mf_ver.altsyncram
+# Loading work.HazardDetection
+# Loading work.RegFile
+# Loading work.imm_Gen
+# Loading work.ForwardingUnit
+# Loading work.mux4
+# Loading work.alu
+# Loading work.BranchUnit
+# Loading work.datamemory
+# Loading work.Memoria32Data
+# Loading work.ramOnChipData
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (32) for port 'rs1'. The port definition is at: ./../design/BranchUnit.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/brunit File: ./../design/Datapath.sv Line: 233
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (1) for port 'd0'. The port definition is at: ./../design/mux2.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/jalrdunit File: ./../design/Datapath.sv Line: 247
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (32) for port 'd1'. The port definition is at: ./../design/mux2.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/jalrdunit File: ./../design/Datapath.sv Line: 247
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (1) for port 'y'. The port definition is at: ./../design/mux2.sv(9).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/jalrdunit File: ./../design/Datapath.sv Line: 247
+# hexadecimal
+# unsigned
+# hexadecimal
+# unsigned
+# unsigned
+# unsigned
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock0.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock1.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock2.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock3.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock0.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock1.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock2.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock3.altsyncram_component.m_default.altsyncram_inst
+#                   35: Memory [  Z] read with value: [xxxxxxxx] | [         x]
+# 
+#                   45: Register [ 4] written with value: [xxxxxxxx] | [         x]
+# 
+#                   55: Register [ 6] written with value: [xxxxxxxx] | [         x]
+# 
+#                   75: Register [ 7] written with value: [0000000Z] | [         Z]
+# 
+#                   85: Register [ 6] written with value: [0000000Z] | [         Z]
+# 
+#                   95: Register [ 3] written with value: [0000000Z] | [         Z]
+# 
+#                  105: Register [ 8] written with value: [0000000Z] | [         Z]
+# 
+#                  115: Register [ 1] written with value: [0000000Z] | [         Z]
+# 
+#                  125: Register [ 1] written with value: [00000000] | [         0]
+# 
+#                  155: Register [ 1] written with value: [00000000] | [         0]
+# 
+#                  185: Register [ 1] written with value: [00000000] | [         0]
+# 
+#                  215: Register [ 1] written with value: [00000000] | [         0]
+# 
+#                  245: Register [ 1] written with value: [00000000] | [         0]
+# 
+#                  275: Register [ 1] written with value: [00000000] | [         0]
+# 
+#                  305: Register [ 1] written with value: [00000000] | [         0]
+# 
+#                  335: Register [ 1] written with value: [00000000] | [         0]
+# 
+#                  365: Register [ 1] written with value: [00000000] | [         0]
+# 
+#                  395: Register [ 1] written with value: [00000000] | [         0]
+# 
+#                  425: Register [ 1] written with value: [00000000] | [         0]
+# 
+#                  455: Register [ 1] written with value: [00000000] | [         0]
+# 
+#                  485: Register [ 1] written with value: [00000000] | [         0]
+# 
+# ** Note: $stop    : ./tb_top.sv(43)
+#    Time: 510 ns  Iteration: 0  Instance: /tb_top
+# Break in Module tb_top at ./tb_top.sv line 43
+do runtb_top
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:09:06 on Feb 21,2025
+# vlog -reportprogress 300 -f compile_verilog 
+# -- Compiling module adder
+# -- Compiling module ramOnChip32
+# -- Compiling module ramOnChipData
+# -- Compiling module Memoria32
+# -- Compiling module Memoria32Data
+# -- Compiling package Pipe_Buf_Reg_PKG
+# -- Compiling module RegFile
+# -- Compiling module alu
+# -- Compiling module ALUController
+# -- Compiling module BranchUnit
+# -- Compiling module Controller
+# -- Compiling module flopr
+# -- Compiling module ForwardingUnit
+# -- Compiling module HazardDetection
+# -- Compiling module imm_Gen
+# -- Compiling module mux2
+# -- Compiling module mux4
+# -- Compiling module datamemory
+# -- Compiling module instructionmemory
+# -- Compiling package Datapath_sv_unit
+# -- Importing package Pipe_Buf_Reg_PKG
+# -- Compiling module Datapath
+# -- Compiling module riscv
+# -- Compiling module tb_top
+# 
+# Top level modules:
+# 	tb_top
+# End time: 21:09:06 on Feb 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 21:09:07 on Feb 21,2025, Elapsed time: 0:01:02
+# Errors: 0, Warnings: 5
+# vsim -gui -L altera_mf_ver work.tb_top 
+# Start time: 21:09:07 on Feb 21,2025
+# Loading sv_std.std
+# Loading work.tb_top
+# Loading work.riscv
+# Loading work.Controller
+# Loading work.ALUController
+# Loading work.Pipe_Buf_Reg_PKG
+# Loading work.Datapath_sv_unit
+# Loading work.Datapath
+# Loading work.adder
+# Loading work.mux2
+# Loading work.flopr
+# Loading work.instructionmemory
+# Loading work.Memoria32
+# Loading work.ramOnChip32
+# Loading altera_mf_ver.altsyncram
+# Loading work.HazardDetection
+# Loading work.RegFile
+# Loading work.imm_Gen
+# Loading work.ForwardingUnit
+# Loading work.mux4
+# Loading work.alu
+# Loading work.BranchUnit
+# Loading work.datamemory
+# Loading work.Memoria32Data
+# Loading work.ramOnChipData
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (32) for port 'rs1'. The port definition is at: ./../design/BranchUnit.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/brunit File: ./../design/Datapath.sv Line: 233
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (1) for port 'd0'. The port definition is at: ./../design/mux2.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/jalrdunit File: ./../design/Datapath.sv Line: 247
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (32) for port 'd1'. The port definition is at: ./../design/mux2.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/jalrdunit File: ./../design/Datapath.sv Line: 247
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (1) for port 'y'. The port definition is at: ./../design/mux2.sv(9).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/jalrdunit File: ./../design/Datapath.sv Line: 247
+# hexadecimal
+# unsigned
+# hexadecimal
+# unsigned
+# unsigned
+# unsigned
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock0.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock1.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock2.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock3.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock0.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock1.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock2.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock3.altsyncram_component.m_default.altsyncram_inst
+#                   35: Memory [  Z] read with value: [xxxxxxxx] | [         x]
+# 
+#                   45: Register [ 4] written with value: [xxxxxxxx] | [         x]
+# 
+#                   55: Register [ 6] written with value: [xxxxxxxx] | [         x]
+# 
+#                   75: Register [ 7] written with value: [0000000Z] | [         Z]
+# 
+#                   85: Register [ 6] written with value: [0000000Z] | [         Z]
+# 
+#                   95: Register [ 3] written with value: [0000000Z] | [         Z]
+# 
+#                  105: Register [ 8] written with value: [0000000Z] | [         Z]
+# 
+#                  115: Register [ 1] written with value: [0000000Z] | [         Z]
+# 
+#                  125: Register [ 1] written with value: [00000000] | [         0]
+# 
+#                  155: Register [ 1] written with value: [00000000] | [         0]
+# 
+#                  185: Register [ 1] written with value: [00000000] | [         0]
+# 
+#                  215: Register [ 1] written with value: [00000000] | [         0]
+# 
+#                  245: Register [ 1] written with value: [00000000] | [         0]
+# 
+#                  275: Register [ 1] written with value: [00000000] | [         0]
+# 
+#                  305: Register [ 1] written with value: [00000000] | [         0]
+# 
+#                  335: Register [ 1] written with value: [00000000] | [         0]
+# 
+#                  365: Register [ 1] written with value: [00000000] | [         0]
+# 
+#                  395: Register [ 1] written with value: [00000000] | [         0]
+# 
+#                  425: Register [ 1] written with value: [00000000] | [         0]
+# 
+#                  455: Register [ 1] written with value: [00000000] | [         0]
+# 
+#                  485: Register [ 1] written with value: [00000000] | [         0]
+# 
+# ** Note: $stop    : ./tb_top.sv(43)
+#    Time: 510 ns  Iteration: 0  Instance: /tb_top
+# Break in Module tb_top at ./tb_top.sv line 43
+do runtb_top
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:09:49 on Feb 21,2025
+# vlog -reportprogress 300 -f compile_verilog 
+# -- Compiling module adder
+# -- Compiling module ramOnChip32
+# -- Compiling module ramOnChipData
+# -- Compiling module Memoria32
+# -- Compiling module Memoria32Data
+# -- Compiling package Pipe_Buf_Reg_PKG
+# -- Compiling module RegFile
+# -- Compiling module alu
+# -- Compiling module ALUController
+# -- Compiling module BranchUnit
+# -- Compiling module Controller
+# -- Compiling module flopr
+# -- Compiling module ForwardingUnit
+# -- Compiling module HazardDetection
+# -- Compiling module imm_Gen
+# -- Compiling module mux2
+# -- Compiling module mux4
+# -- Compiling module datamemory
+# -- Compiling module instructionmemory
+# -- Compiling package Datapath_sv_unit
+# -- Importing package Pipe_Buf_Reg_PKG
+# -- Compiling module Datapath
+# -- Compiling module riscv
+# -- Compiling module tb_top
+# 
+# Top level modules:
+# 	tb_top
+# End time: 21:09:49 on Feb 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 21:09:50 on Feb 21,2025, Elapsed time: 0:00:43
+# Errors: 0, Warnings: 5
+# vsim -gui -L altera_mf_ver work.tb_top 
+# Start time: 21:09:50 on Feb 21,2025
+# Loading sv_std.std
+# Loading work.tb_top
+# Loading work.riscv
+# Loading work.Controller
+# Loading work.ALUController
+# Loading work.Pipe_Buf_Reg_PKG
+# Loading work.Datapath_sv_unit
+# Loading work.Datapath
+# Loading work.adder
+# Loading work.mux2
+# Loading work.flopr
+# Loading work.instructionmemory
+# Loading work.Memoria32
+# Loading work.ramOnChip32
+# Loading altera_mf_ver.altsyncram
+# Loading work.HazardDetection
+# Loading work.RegFile
+# Loading work.imm_Gen
+# Loading work.ForwardingUnit
+# Loading work.mux4
+# Loading work.alu
+# Loading work.BranchUnit
+# Loading work.datamemory
+# Loading work.Memoria32Data
+# Loading work.ramOnChipData
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (32) for port 'rs1'. The port definition is at: ./../design/BranchUnit.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/brunit File: ./../design/Datapath.sv Line: 233
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (1) for port 'd0'. The port definition is at: ./../design/mux2.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/jalrdunit File: ./../design/Datapath.sv Line: 247
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (32) for port 'd1'. The port definition is at: ./../design/mux2.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/jalrdunit File: ./../design/Datapath.sv Line: 247
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (1) for port 'y'. The port definition is at: ./../design/mux2.sv(9).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/jalrdunit File: ./../design/Datapath.sv Line: 247
+# hexadecimal
+# unsigned
+# hexadecimal
+# unsigned
+# unsigned
+# unsigned
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock0.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock1.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock2.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock3.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock0.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock1.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock2.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock3.altsyncram_component.m_default.altsyncram_inst
+#                   35: Memory [  Z] read with value: [xxxxxxxx] | [         x]
+# 
+#                   45: Register [ 4] written with value: [xxxxxxxx] | [         x]
+# 
+#                   55: Register [ 6] written with value: [xxxxxxxx] | [         x]
+# 
+#                   75: Register [ 7] written with value: [0000000Z] | [         Z]
+# 
+#                   85: Register [ 6] written with value: [0000000Z] | [         Z]
+# 
+#                   95: Register [ 3] written with value: [0000000Z] | [         Z]
+# 
+#                  105: Register [ 8] written with value: [0000000Z] | [         Z]
+# 
+#                  115: Register [ 1] written with value: [0000000Z] | [         Z]
+# 
+#                  125: Register [ 1] written with value: [00000000] | [         0]
+# 
+#                  155: Register [ 1] written with value: [00000000] | [         0]
+# 
+#                  185: Register [ 1] written with value: [00000000] | [         0]
+# 
+#                  215: Register [ 1] written with value: [00000000] | [         0]
+# 
+#                  245: Register [ 1] written with value: [00000000] | [         0]
+# 
+#                  275: Register [ 1] written with value: [00000000] | [         0]
+# 
+#                  305: Register [ 1] written with value: [00000000] | [         0]
+# 
+#                  335: Register [ 1] written with value: [00000000] | [         0]
+# 
+#                  365: Register [ 1] written with value: [00000000] | [         0]
+# 
+#                  395: Register [ 1] written with value: [00000000] | [         0]
+# 
+#                  425: Register [ 1] written with value: [00000000] | [         0]
+# 
+#                  455: Register [ 1] written with value: [00000000] | [         0]
+# 
+#                  485: Register [ 1] written with value: [00000000] | [         0]
+# 
+# ** Note: $stop    : ./tb_top.sv(43)
+#    Time: 510 ns  Iteration: 0  Instance: /tb_top
+# Break in Module tb_top at ./tb_top.sv line 43
+# Compile of alu.sv was successful.
+do runtb_top
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:12:28 on Feb 21,2025
+# vlog -reportprogress 300 -f compile_verilog 
+# -- Compiling module adder
+# -- Compiling module ramOnChip32
+# -- Compiling module ramOnChipData
+# -- Compiling module Memoria32
+# -- Compiling module Memoria32Data
+# -- Compiling package Pipe_Buf_Reg_PKG
+# -- Compiling module RegFile
+# -- Compiling module alu
+# -- Compiling module ALUController
+# -- Compiling module BranchUnit
+# -- Compiling module Controller
+# -- Compiling module flopr
+# -- Compiling module ForwardingUnit
+# -- Compiling module HazardDetection
+# -- Compiling module imm_Gen
+# -- Compiling module mux2
+# -- Compiling module mux4
+# -- Compiling module datamemory
+# -- Compiling module instructionmemory
+# -- Compiling package Datapath_sv_unit
+# -- Importing package Pipe_Buf_Reg_PKG
+# -- Compiling module Datapath
+# -- Compiling module riscv
+# -- Compiling module tb_top
+# 
+# Top level modules:
+# 	tb_top
+# End time: 21:12:28 on Feb 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 21:12:29 on Feb 21,2025, Elapsed time: 0:02:39
+# Errors: 0, Warnings: 6
+# vsim -gui -L altera_mf_ver work.tb_top 
+# Start time: 21:12:29 on Feb 21,2025
+# Loading sv_std.std
+# Loading work.tb_top
+# Loading work.riscv
+# Loading work.Controller
+# Loading work.ALUController
+# Loading work.Pipe_Buf_Reg_PKG
+# Loading work.Datapath_sv_unit
+# Loading work.Datapath
+# Loading work.adder
+# Loading work.mux2
+# Loading work.flopr
+# Loading work.instructionmemory
+# Loading work.Memoria32
+# Loading work.ramOnChip32
+# Loading altera_mf_ver.altsyncram
+# Loading work.HazardDetection
+# Loading work.RegFile
+# Loading work.imm_Gen
+# Loading work.ForwardingUnit
+# Loading work.mux4
+# Loading work.alu
+# Loading work.BranchUnit
+# Loading work.datamemory
+# Loading work.Memoria32Data
+# Loading work.ramOnChipData
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (32) for port 'rs1'. The port definition is at: ./../design/BranchUnit.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/brunit File: ./../design/Datapath.sv Line: 233
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (1) for port 'd0'. The port definition is at: ./../design/mux2.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/jalrdunit File: ./../design/Datapath.sv Line: 247
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (32) for port 'd1'. The port definition is at: ./../design/mux2.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/jalrdunit File: ./../design/Datapath.sv Line: 247
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (1) for port 'y'. The port definition is at: ./../design/mux2.sv(9).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/jalrdunit File: ./../design/Datapath.sv Line: 247
+# hexadecimal
+# unsigned
+# hexadecimal
+# unsigned
+# unsigned
+# unsigned
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock0.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock1.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock2.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock3.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock0.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock1.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock2.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock3.altsyncram_component.m_default.altsyncram_inst
+#                   35: Memory [  Z] read with value: [xxxxxxxx] | [         x]
+# 
+#                   45: Register [ 4] written with value: [xxxxxxxx] | [         x]
+# 
+#                   55: Register [ 6] written with value: [xxxxxxxx] | [         x]
+# 
+#                   75: Register [ 7] written with value: [0000000Z] | [         Z]
+# 
+#                   85: Register [ 6] written with value: [0000000Z] | [         Z]
+# 
+#                   95: Register [ 3] written with value: [0000000Z] | [         Z]
+# 
+#                  105: Register [ 8] written with value: [0000000Z] | [         Z]
+# 
+#                  115: Register [ 1] written with value: [0000000Z] | [         Z]
+# 
+#                  125: Register [ 1] written with value: [00000000] | [         0]
+# 
+#                  155: Register [ 1] written with value: [00000000] | [         0]
+# 
+#                  185: Register [ 1] written with value: [00000000] | [         0]
+# 
+#                  215: Register [ 1] written with value: [00000000] | [         0]
+# 
+#                  245: Register [ 1] written with value: [00000000] | [         0]
+# 
+#                  275: Register [ 1] written with value: [00000000] | [         0]
+# 
+#                  305: Register [ 1] written with value: [00000000] | [         0]
+# 
+#                  335: Register [ 1] written with value: [00000000] | [         0]
+# 
+#                  365: Register [ 1] written with value: [00000000] | [         0]
+# 
+#                  395: Register [ 1] written with value: [00000000] | [         0]
+# 
+#                  425: Register [ 1] written with value: [00000000] | [         0]
+# 
+#                  455: Register [ 1] written with value: [00000000] | [         0]
+# 
+#                  485: Register [ 1] written with value: [00000000] | [         0]
+# 
+# ** Note: $stop    : ./tb_top.sv(43)
+#    Time: 510 ns  Iteration: 0  Instance: /tb_top
+# Break in Module tb_top at ./tb_top.sv line 43
+do runtb_top
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:13:22 on Feb 21,2025
+# vlog -reportprogress 300 -f compile_verilog 
+# -- Compiling module adder
+# -- Compiling module ramOnChip32
+# -- Compiling module ramOnChipData
+# -- Compiling module Memoria32
+# -- Compiling module Memoria32Data
+# -- Compiling package Pipe_Buf_Reg_PKG
+# -- Compiling module RegFile
+# -- Compiling module alu
+# -- Compiling module ALUController
+# -- Compiling module BranchUnit
+# -- Compiling module Controller
+# -- Compiling module flopr
+# -- Compiling module ForwardingUnit
+# -- Compiling module HazardDetection
+# -- Compiling module imm_Gen
+# -- Compiling module mux2
+# -- Compiling module mux4
+# -- Compiling module datamemory
+# -- Compiling module instructionmemory
+# -- Compiling package Datapath_sv_unit
+# -- Importing package Pipe_Buf_Reg_PKG
+# -- Compiling module Datapath
+# -- Compiling module riscv
+# -- Compiling module tb_top
+# 
+# Top level modules:
+# 	tb_top
+# End time: 21:13:22 on Feb 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 21:13:23 on Feb 21,2025, Elapsed time: 0:00:54
+# Errors: 0, Warnings: 5
+# vsim -gui -L altera_mf_ver work.tb_top 
+# Start time: 21:13:23 on Feb 21,2025
+# Loading sv_std.std
+# Loading work.tb_top
+# Loading work.riscv
+# Loading work.Controller
+# Loading work.ALUController
+# Loading work.Pipe_Buf_Reg_PKG
+# Loading work.Datapath_sv_unit
+# Loading work.Datapath
+# Loading work.adder
+# Loading work.mux2
+# Loading work.flopr
+# Loading work.instructionmemory
+# Loading work.Memoria32
+# Loading work.ramOnChip32
+# Loading altera_mf_ver.altsyncram
+# Loading work.HazardDetection
+# Loading work.RegFile
+# Loading work.imm_Gen
+# Loading work.ForwardingUnit
+# Loading work.mux4
+# Loading work.alu
+# Loading work.BranchUnit
+# Loading work.datamemory
+# Loading work.Memoria32Data
+# Loading work.ramOnChipData
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (32) for port 'rs1'. The port definition is at: ./../design/BranchUnit.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/brunit File: ./../design/Datapath.sv Line: 233
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (1) for port 'd0'. The port definition is at: ./../design/mux2.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/jalrdunit File: ./../design/Datapath.sv Line: 247
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (32) for port 'd1'. The port definition is at: ./../design/mux2.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/jalrdunit File: ./../design/Datapath.sv Line: 247
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (1) for port 'y'. The port definition is at: ./../design/mux2.sv(9).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/jalrdunit File: ./../design/Datapath.sv Line: 247
+# hexadecimal
+# unsigned
+# hexadecimal
+# unsigned
+# unsigned
+# unsigned
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock0.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock1.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock2.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock3.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock0.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock1.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock2.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock3.altsyncram_component.m_default.altsyncram_inst
+#                   35: Memory [  Z] read with value: [xxxxxxxx] | [         x]
+# 
+#                   45: Register [ 4] written with value: [xxxxxxxx] | [         x]
+# 
+#                   55: Register [ 6] written with value: [xxxxxxxx] | [         x]
+# 
+#                   75: Register [ 7] written with value: [0000000Z] | [         Z]
+# 
+#                   85: Register [ 6] written with value: [0000000Z] | [         Z]
+# 
+#                   95: Register [ 3] written with value: [0000000Z] | [         Z]
+# 
+#                  105: Register [ 8] written with value: [0000000Z] | [         Z]
+# 
+#                  115: Register [ 1] written with value: [0000000Z] | [         Z]
+# 
+#                  125: Register [ 2] written with value: [0000000Z] | [         Z]
+# 
+# ** Note: $stop    : ./tb_top.sv(43)
+#    Time: 510 ns  Iteration: 0  Instance: /tb_top
+# Break in Module tb_top at ./tb_top.sv line 43
+# Compile of Datapath.sv failed with 1 errors.
+# Compile of Datapath.sv failed with 1 errors.
+# Compile of Datapath.sv was successful with warnings.
+# Compile of Datapath.sv was successful.
+do runtb_top
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:16:44 on Feb 21,2025
+# vlog -reportprogress 300 -f compile_verilog 
+# -- Compiling module adder
+# -- Compiling module ramOnChip32
+# -- Compiling module ramOnChipData
+# -- Compiling module Memoria32
+# -- Compiling module Memoria32Data
+# -- Compiling package Pipe_Buf_Reg_PKG
+# -- Compiling module RegFile
+# -- Compiling module alu
+# -- Compiling module ALUController
+# -- Compiling module BranchUnit
+# -- Compiling module Controller
+# -- Compiling module flopr
+# -- Compiling module ForwardingUnit
+# -- Compiling module HazardDetection
+# -- Compiling module imm_Gen
+# -- Compiling module mux2
+# -- Compiling module mux4
+# -- Compiling module datamemory
+# -- Compiling module instructionmemory
+# -- Compiling package Datapath_sv_unit
+# -- Importing package Pipe_Buf_Reg_PKG
+# -- Compiling module Datapath
+# -- Compiling module riscv
+# -- Compiling module tb_top
+# 
+# Top level modules:
+# 	tb_top
+# End time: 21:16:44 on Feb 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 21:16:45 on Feb 21,2025, Elapsed time: 0:03:22
+# Errors: 0, Warnings: 9
+# vsim -gui -L altera_mf_ver work.tb_top 
+# Start time: 21:16:45 on Feb 21,2025
+# Loading sv_std.std
+# Loading work.tb_top
+# Loading work.riscv
+# Loading work.Controller
+# Loading work.ALUController
+# Loading work.Pipe_Buf_Reg_PKG
+# Loading work.Datapath_sv_unit
+# Loading work.Datapath
+# Loading work.adder
+# Loading work.mux2
+# Loading work.flopr
+# Loading work.instructionmemory
+# Loading work.Memoria32
+# Loading work.ramOnChip32
+# Loading altera_mf_ver.altsyncram
+# Loading work.HazardDetection
+# Loading work.RegFile
+# Loading work.imm_Gen
+# Loading work.ForwardingUnit
+# Loading work.mux4
+# Loading work.alu
+# Loading work.BranchUnit
+# Loading work.datamemory
+# Loading work.Memoria32Data
+# Loading work.ramOnChipData
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (32) for port 'rs1'. The port definition is at: ./../design/BranchUnit.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/brunit File: ./../design/Datapath.sv Line: 233
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (1) for port 'd0'. The port definition is at: ./../design/mux2.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/jalrdunit File: ./../design/Datapath.sv Line: 247
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (32) for port 'd1'. The port definition is at: ./../design/mux2.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/jalrdunit File: ./../design/Datapath.sv Line: 247
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (1) for port 'y'. The port definition is at: ./../design/mux2.sv(9).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/jalrdunit File: ./../design/Datapath.sv Line: 247
+# hexadecimal
+# unsigned
+# hexadecimal
+# unsigned
+# unsigned
+# unsigned
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock0.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock1.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock2.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock3.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock0.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock1.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock2.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock3.altsyncram_component.m_default.altsyncram_inst
+#                   35: Memory [  Z] read with value: [xxxxxxxx] | [         x]
+# 
+#                   45: Register [ 4] written with value: [xxxxxxxx] | [         x]
+# 
+#                   55: Register [ 6] written with value: [xxxxxxxx] | [         x]
+# 
+#                   75: Register [ 7] written with value: [0000000Z] | [         Z]
+# 
+#                   85: Register [ 6] written with value: [0000000Z] | [         Z]
+# 
+#                   95: Register [ 3] written with value: [0000000Z] | [         Z]
+# 
+#                  105: Register [ 8] written with value: [0000000Z] | [         Z]
+# 
+#                  115: Register [ 1] written with value: [0000000Z] | [         Z]
+# 
+#                  125: Register [ 2] written with value: [0000000Z] | [         Z]
+# 
+# ** Note: $stop    : ./tb_top.sv(43)
+#    Time: 510 ns  Iteration: 0  Instance: /tb_top
+# Break in Module tb_top at ./tb_top.sv line 43
+# Compile of Datapath.sv was successful with warnings.
+do runtb_top
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:18:00 on Feb 21,2025
+# vlog -reportprogress 300 -f compile_verilog 
+# -- Compiling module adder
+# -- Compiling module ramOnChip32
+# -- Compiling module ramOnChipData
+# -- Compiling module Memoria32
+# -- Compiling module Memoria32Data
+# -- Compiling package Pipe_Buf_Reg_PKG
+# -- Compiling module RegFile
+# -- Compiling module alu
+# -- Compiling module ALUController
+# -- Compiling module BranchUnit
+# -- Compiling module Controller
+# -- Compiling module flopr
+# -- Compiling module ForwardingUnit
+# -- Compiling module HazardDetection
+# -- Compiling module imm_Gen
+# -- Compiling module mux2
+# -- Compiling module mux4
+# -- Compiling module datamemory
+# -- Compiling module instructionmemory
+# -- Compiling package Datapath_sv_unit
+# -- Importing package Pipe_Buf_Reg_PKG
+# -- Compiling module Datapath
+# -- Compiling module riscv
+# -- Compiling module tb_top
+# 
+# Top level modules:
+# 	tb_top
+# End time: 21:18:01 on Feb 21,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 21:18:01 on Feb 21,2025, Elapsed time: 0:01:16
+# Errors: 0, Warnings: 6
+# vsim -gui -L altera_mf_ver work.tb_top 
+# Start time: 21:18:01 on Feb 21,2025
+# Loading sv_std.std
+# Loading work.tb_top
+# Loading work.riscv
+# Loading work.Controller
+# Loading work.ALUController
+# Loading work.Pipe_Buf_Reg_PKG
+# Loading work.Datapath_sv_unit
+# Loading work.Datapath
+# Loading work.adder
+# Loading work.mux2
+# Loading work.flopr
+# Loading work.instructionmemory
+# Loading work.Memoria32
+# Loading work.ramOnChip32
+# Loading altera_mf_ver.altsyncram
+# Loading work.HazardDetection
+# Loading work.RegFile
+# Loading work.imm_Gen
+# Loading work.ForwardingUnit
+# Loading work.mux4
+# Loading work.alu
+# Loading work.BranchUnit
+# Loading work.datamemory
+# Loading work.Memoria32Data
+# Loading work.ramOnChipData
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (32) for port 'rs1'. The port definition is at: ./../design/BranchUnit.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/brunit File: ./../design/Datapath.sv Line: 233
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (32) for port 'd0'. The port definition is at: ./../design/mux2.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/jalrdunit File: ./../design/Datapath.sv Line: 247
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (32) for port 'd1'. The port definition is at: ./../design/mux2.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/jalrdunit File: ./../design/Datapath.sv Line: 247
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (1) for port 'y'. The port definition is at: ./../design/mux2.sv(9).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/jalrdunit File: ./../design/Datapath.sv Line: 247
+# hexadecimal
+# unsigned
+# hexadecimal
+# unsigned
+# unsigned
+# unsigned
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock0.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock1.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock2.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock3.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock0.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock1.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock2.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock3.altsyncram_component.m_default.altsyncram_inst
+#                   35: Memory [  1] read with value: [xxxxxxxx] | [         x]
+# 
+#                   35: Memory [  1] read with value: [00000202] | [       514]
+# 
+#                   40: Memory [  1] read with value: [00000002] | [         2]
+# 
+#                   45: Memory [  0] read with value: [00000002] | [         2]
+# 
+#                   45: Register [ 4] written with value: [00000002] | [         2]
+# 
+#                   50: Memory [  0] read with value: [00000202] | [       514]
+# 
+#                   55: Register [ 6] written with value: [00000202] | [       514]
+# 
+#                   75: Register [ 7] written with value: [00000204] | [       516]
+# 
+#                   85: Register [ 6] written with value: [00000408] | [      1032]
+# 
+#                   95: Register [ 3] written with value: [00000000] | [         0]
+# 
+#                  105: Register [ 8] written with value: [00000206] | [       518]
+# 
+#                  115: Register [ 1] written with value: [00000000] | [         0]
+# 
+#                  125: Register [ 2] written with value: [00000206] | [       518]
+# 
+# ** Note: $stop    : ./tb_top.sv(43)
+#    Time: 510 ns  Iteration: 0  Instance: /tb_top
+# Break in Module tb_top at ./tb_top.sv line 43
+# Compile of Datapath.sv failed with 1 errors.
+# Compile of Datapath.sv was successful with warnings.
+do runtb_top
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:18:55 on Feb 21,2025
+# vlog -reportprogress 300 -f compile_verilog 
+# -- Compiling module adder
+# -- Compiling module ramOnChip32
+# -- Compiling module ramOnChipData
+# -- Compiling module Memoria32
+# -- Compiling module Memoria32Data
+# -- Compiling package Pipe_Buf_Reg_PKG
+# -- Compiling module RegFile
+# -- Compiling module alu
+# -- Compiling module ALUController
+# -- Compiling module BranchUnit
+# -- Compiling module Controller
+# -- Compiling module flopr
+# -- Compiling module ForwardingUnit
+# -- Compiling module HazardDetection
+# -- Compiling module imm_Gen
+# -- Compiling module mux2
+# -- Compiling module mux4
+# -- Compiling module datamemory
+# -- Compiling module instructionmemory
+# -- Compiling package Datapath_sv_unit
+# -- Importing package Pipe_Buf_Reg_PKG
+# -- Compiling module Datapath
+# -- Compiling module riscv
+# -- Compiling module tb_top
+# 
+# Top level modules:
+# 	tb_top
+# End time: 21:18:55 on Feb 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 21:18:56 on Feb 21,2025, Elapsed time: 0:00:55
+# Errors: 0, Warnings: 7
+# vsim -gui -L altera_mf_ver work.tb_top 
+# Start time: 21:18:56 on Feb 21,2025
+# Loading sv_std.std
+# Loading work.tb_top
+# Loading work.riscv
+# Loading work.Controller
+# Loading work.ALUController
+# Loading work.Pipe_Buf_Reg_PKG
+# Loading work.Datapath_sv_unit
+# Loading work.Datapath
+# Loading work.adder
+# Loading work.mux2
+# Loading work.flopr
+# Loading work.instructionmemory
+# Loading work.Memoria32
+# Loading work.ramOnChip32
+# Loading altera_mf_ver.altsyncram
+# Loading work.HazardDetection
+# Loading work.RegFile
+# Loading work.imm_Gen
+# Loading work.ForwardingUnit
+# Loading work.mux4
+# Loading work.alu
+# Loading work.BranchUnit
+# Loading work.datamemory
+# Loading work.Memoria32Data
+# Loading work.ramOnChipData
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (32) for port 'rs1'. The port definition is at: ./../design/BranchUnit.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/brunit File: ./../design/Datapath.sv Line: 233
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (32) for port 'd0'. The port definition is at: ./../design/mux2.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/jalrdunit File: ./../design/Datapath.sv Line: 247
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (32) for port 'd1'. The port definition is at: ./../design/mux2.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/jalrdunit File: ./../design/Datapath.sv Line: 247
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (1) for port 'y'. The port definition is at: ./../design/mux2.sv(9).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/jalrdunit File: ./../design/Datapath.sv Line: 247
+# hexadecimal
+# unsigned
+# hexadecimal
+# unsigned
+# unsigned
+# unsigned
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock0.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock1.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock2.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock3.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock0.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock1.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock2.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock3.altsyncram_component.m_default.altsyncram_inst
+#                   35: Memory [  1] read with value: [xxxxxxxx] | [         x]
+# 
+#                   35: Memory [  1] read with value: [00000202] | [       514]
+# 
+#                   40: Memory [  1] read with value: [00000002] | [         2]
+# 
+#                   45: Memory [  0] read with value: [00000002] | [         2]
+# 
+#                   45: Register [ 4] written with value: [00000002] | [         2]
+# 
+#                   50: Memory [  0] read with value: [00000202] | [       514]
+# 
+#                   55: Register [ 6] written with value: [00000202] | [       514]
+# 
+#                   75: Register [ 7] written with value: [00000000] | [         0]
+# 
+#                   85: Register [ 6] written with value: [00000000] | [         0]
+# 
+#                   95: Register [ 3] written with value: [00000000] | [         0]
+# 
+#                  105: Register [ 8] written with value: [00000000] | [         0]
+# 
+#                  115: Register [ 1] written with value: [00000000] | [         0]
+# 
+#                  125: Register [ 2] written with value: [00000000] | [         0]
+# 
+# ** Note: $stop    : ./tb_top.sv(43)
+#    Time: 510 ns  Iteration: 0  Instance: /tb_top
+# Break in Module tb_top at ./tb_top.sv line 43
+# Compile of Datapath.sv was successful with warnings.
+do runtb_top
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:21:02 on Feb 21,2025
+# vlog -reportprogress 300 -f compile_verilog 
+# -- Compiling module adder
+# -- Compiling module ramOnChip32
+# -- Compiling module ramOnChipData
+# -- Compiling module Memoria32
+# -- Compiling module Memoria32Data
+# -- Compiling package Pipe_Buf_Reg_PKG
+# -- Compiling module RegFile
+# -- Compiling module alu
+# -- Compiling module ALUController
+# -- Compiling module BranchUnit
+# -- Compiling module Controller
+# -- Compiling module flopr
+# -- Compiling module ForwardingUnit
+# -- Compiling module HazardDetection
+# -- Compiling module imm_Gen
+# -- Compiling module mux2
+# -- Compiling module mux4
+# -- Compiling module datamemory
+# -- Compiling module instructionmemory
+# -- Compiling package Datapath_sv_unit
+# -- Importing package Pipe_Buf_Reg_PKG
+# -- Compiling module Datapath
+# -- Compiling module riscv
+# -- Compiling module tb_top
+# 
+# Top level modules:
+# 	tb_top
+# End time: 21:21:02 on Feb 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 21:21:03 on Feb 21,2025, Elapsed time: 0:02:07
+# Errors: 0, Warnings: 6
+# vsim -gui -L altera_mf_ver work.tb_top 
+# Start time: 21:21:03 on Feb 21,2025
+# Loading sv_std.std
+# Loading work.tb_top
+# Loading work.riscv
+# Loading work.Controller
+# Loading work.ALUController
+# Loading work.Pipe_Buf_Reg_PKG
+# Loading work.Datapath_sv_unit
+# Loading work.Datapath
+# Loading work.adder
+# Loading work.mux2
+# Loading work.flopr
+# Loading work.instructionmemory
+# Loading work.Memoria32
+# Loading work.ramOnChip32
+# Loading altera_mf_ver.altsyncram
+# Loading work.HazardDetection
+# Loading work.RegFile
+# Loading work.imm_Gen
+# Loading work.ForwardingUnit
+# Loading work.mux4
+# Loading work.alu
+# Loading work.BranchUnit
+# Loading work.datamemory
+# Loading work.Memoria32Data
+# Loading work.ramOnChipData
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (32) for port 'rs1'. The port definition is at: ./../design/BranchUnit.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/brunit File: ./../design/Datapath.sv Line: 233
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (32) for port 'd0'. The port definition is at: ./../design/mux2.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/jalrdunit File: ./../design/Datapath.sv Line: 247
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (32) for port 'd1'. The port definition is at: ./../design/mux2.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/jalrdunit File: ./../design/Datapath.sv Line: 247
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (1) for port 'y'. The port definition is at: ./../design/mux2.sv(9).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/jalrdunit File: ./../design/Datapath.sv Line: 247
+# hexadecimal
+# unsigned
+# hexadecimal
+# unsigned
+# unsigned
+# unsigned
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock0.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock1.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock2.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock3.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock0.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock1.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock2.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock3.altsyncram_component.m_default.altsyncram_inst
+#                   35: Memory [  1] read with value: [xxxxxxxx] | [         x]
+# 
+#                   35: Memory [  1] read with value: [00000202] | [       514]
+# 
+#                   40: Memory [  1] read with value: [00000002] | [         2]
+# 
+#                   45: Memory [  0] read with value: [00000002] | [         2]
+# 
+#                   45: Register [ 4] written with value: [00000002] | [         2]
+# 
+#                   50: Memory [  0] read with value: [00000202] | [       514]
+# 
+#                   55: Register [ 6] written with value: [00000202] | [       514]
+# 
+#                   75: Register [ 7] written with value: [00000000] | [         0]
+# 
+#                   85: Register [ 6] written with value: [00000000] | [         0]
+# 
+#                   95: Register [ 3] written with value: [00000000] | [         0]
+# 
+#                  105: Register [ 8] written with value: [00000000] | [         0]
+# 
+#                  115: Register [ 1] written with value: [00000000] | [         0]
+# 
+#                  125: Register [ 2] written with value: [00000000] | [         0]
+# 
+# ** Note: $stop    : ./tb_top.sv(43)
+#    Time: 510 ns  Iteration: 0  Instance: /tb_top
+# Break in Module tb_top at ./tb_top.sv line 43
+do runtb_top
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:22:14 on Feb 21,2025
+# vlog -reportprogress 300 -f compile_verilog 
+# -- Compiling module adder
+# -- Compiling module ramOnChip32
+# -- Compiling module ramOnChipData
+# -- Compiling module Memoria32
+# -- Compiling module Memoria32Data
+# -- Compiling package Pipe_Buf_Reg_PKG
+# -- Compiling module RegFile
+# -- Compiling module alu
+# -- Compiling module ALUController
+# -- Compiling module BranchUnit
+# -- Compiling module Controller
+# -- Compiling module flopr
+# -- Compiling module ForwardingUnit
+# -- Compiling module HazardDetection
+# -- Compiling module imm_Gen
+# -- Compiling module mux2
+# -- Compiling module mux4
+# -- Compiling module datamemory
+# -- Compiling module instructionmemory
+# -- Compiling package Datapath_sv_unit
+# -- Importing package Pipe_Buf_Reg_PKG
+# -- Compiling module Datapath
+# -- Compiling module riscv
+# -- Compiling module tb_top
+# 
+# Top level modules:
+# 	tb_top
+# End time: 21:22:14 on Feb 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 21:22:15 on Feb 21,2025, Elapsed time: 0:01:12
+# Errors: 0, Warnings: 5
+# vsim -gui -L altera_mf_ver work.tb_top 
+# Start time: 21:22:15 on Feb 21,2025
+# Loading sv_std.std
+# Loading work.tb_top
+# Loading work.riscv
+# Loading work.Controller
+# Loading work.ALUController
+# Loading work.Pipe_Buf_Reg_PKG
+# Loading work.Datapath_sv_unit
+# Loading work.Datapath
+# Loading work.adder
+# Loading work.mux2
+# Loading work.flopr
+# Loading work.instructionmemory
+# Loading work.Memoria32
+# Loading work.ramOnChip32
+# Loading altera_mf_ver.altsyncram
+# Loading work.HazardDetection
+# Loading work.RegFile
+# Loading work.imm_Gen
+# Loading work.ForwardingUnit
+# Loading work.mux4
+# Loading work.alu
+# Loading work.BranchUnit
+# Loading work.datamemory
+# Loading work.Memoria32Data
+# Loading work.ramOnChipData
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (32) for port 'rs1'. The port definition is at: ./../design/BranchUnit.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/brunit File: ./../design/Datapath.sv Line: 233
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (32) for port 'd0'. The port definition is at: ./../design/mux2.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/jalrdunit File: ./../design/Datapath.sv Line: 247
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (32) for port 'd1'. The port definition is at: ./../design/mux2.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/jalrdunit File: ./../design/Datapath.sv Line: 247
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (1) for port 'y'. The port definition is at: ./../design/mux2.sv(9).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/jalrdunit File: ./../design/Datapath.sv Line: 247
+# hexadecimal
+# unsigned
+# hexadecimal
+# unsigned
+# unsigned
+# unsigned
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock0.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock1.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock2.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock3.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock0.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock1.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock2.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock3.altsyncram_component.m_default.altsyncram_inst
+#                   35: Memory [  1] read with value: [xxxxxxxx] | [         x]
+# 
+#                   35: Memory [  1] read with value: [00000202] | [       514]
+# 
+#                   40: Memory [  1] read with value: [00000002] | [         2]
+# 
+#                   45: Memory [  0] read with value: [00000002] | [         2]
+# 
+#                   45: Register [ 4] written with value: [00000002] | [         2]
+# 
+#                   50: Memory [  0] read with value: [00000202] | [       514]
+# 
+#                   55: Register [ 6] written with value: [00000202] | [       514]
+# 
+#                   75: Register [ 7] written with value: [00000000] | [         0]
+# 
+#                   85: Register [ 6] written with value: [00000000] | [         0]
+# 
+#                   95: Register [ 3] written with value: [00000000] | [         0]
+# 
+#                  105: Register [ 8] written with value: [00000000] | [         0]
+# 
+#                  115: Register [ 1] written with value: [00000000] | [         0]
+# 
+#                  125: Register [ 2] written with value: [00000000] | [         0]
+# 
+# ** Note: $stop    : ./tb_top.sv(43)
+#    Time: 510 ns  Iteration: 0  Instance: /tb_top
+# Break in Module tb_top at ./tb_top.sv line 43
+do runtb_top
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:23:30 on Feb 21,2025
+# vlog -reportprogress 300 -f compile_verilog 
+# -- Compiling module adder
+# -- Compiling module ramOnChip32
+# -- Compiling module ramOnChipData
+# -- Compiling module Memoria32
+# -- Compiling module Memoria32Data
+# -- Compiling package Pipe_Buf_Reg_PKG
+# -- Compiling module RegFile
+# -- Compiling module alu
+# -- Compiling module ALUController
+# -- Compiling module BranchUnit
+# -- Compiling module Controller
+# -- Compiling module flopr
+# -- Compiling module ForwardingUnit
+# -- Compiling module HazardDetection
+# -- Compiling module imm_Gen
+# -- Compiling module mux2
+# -- Compiling module mux4
+# -- Compiling module datamemory
+# -- Compiling module instructionmemory
+# -- Compiling package Datapath_sv_unit
+# -- Importing package Pipe_Buf_Reg_PKG
+# -- Compiling module Datapath
+# -- Compiling module riscv
+# -- Compiling module tb_top
+# 
+# Top level modules:
+# 	tb_top
+# End time: 21:23:30 on Feb 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 21:23:31 on Feb 21,2025, Elapsed time: 0:01:16
+# Errors: 0, Warnings: 5
+# vsim -gui -L altera_mf_ver work.tb_top 
+# Start time: 21:23:31 on Feb 21,2025
+# Loading sv_std.std
+# Loading work.tb_top
+# Loading work.riscv
+# Loading work.Controller
+# Loading work.ALUController
+# Loading work.Pipe_Buf_Reg_PKG
+# Loading work.Datapath_sv_unit
+# Loading work.Datapath
+# Loading work.adder
+# Loading work.mux2
+# Loading work.flopr
+# Loading work.instructionmemory
+# Loading work.Memoria32
+# Loading work.ramOnChip32
+# Loading altera_mf_ver.altsyncram
+# Loading work.HazardDetection
+# Loading work.RegFile
+# Loading work.imm_Gen
+# Loading work.ForwardingUnit
+# Loading work.mux4
+# Loading work.alu
+# Loading work.BranchUnit
+# Loading work.datamemory
+# Loading work.Memoria32Data
+# Loading work.ramOnChipData
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (32) for port 'rs1'. The port definition is at: ./../design/BranchUnit.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/brunit File: ./../design/Datapath.sv Line: 233
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (32) for port 'd0'. The port definition is at: ./../design/mux2.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/jalrdunit File: ./../design/Datapath.sv Line: 247
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (32) for port 'd1'. The port definition is at: ./../design/mux2.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/jalrdunit File: ./../design/Datapath.sv Line: 247
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (1) for port 'y'. The port definition is at: ./../design/mux2.sv(9).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/jalrdunit File: ./../design/Datapath.sv Line: 247
+# hexadecimal
+# unsigned
+# hexadecimal
+# unsigned
+# unsigned
+# unsigned
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock0.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock1.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock2.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock3.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock0.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock1.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock2.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock3.altsyncram_component.m_default.altsyncram_inst
+#                   35: Memory [  1] read with value: [xxxxxxxx] | [         x]
+# 
+#                   35: Memory [  1] read with value: [00000202] | [       514]
+# 
+#                   40: Memory [  1] read with value: [00000002] | [         2]
+# 
+#                   45: Memory [  0] read with value: [00000002] | [         2]
+# 
+#                   45: Register [ 4] written with value: [00000002] | [         2]
+# 
+#                   50: Memory [  0] read with value: [00000202] | [       514]
+# 
+#                   55: Register [ 6] written with value: [00000202] | [       514]
+# 
+#                   75: Register [ 7] written with value: [00000000] | [         0]
+# 
+#                   85: Register [ 6] written with value: [00000000] | [         0]
+# 
+#                   95: Register [ 3] written with value: [00000000] | [         0]
+# 
+#                  105: Register [ 8] written with value: [00000000] | [         0]
+# 
+#                  115: Register [ 1] written with value: [00000000] | [         0]
+# 
+#                  125: Register [ 2] written with value: [00000000] | [         0]
+# 
+# ** Note: $stop    : ./tb_top.sv(43)
+#    Time: 510 ns  Iteration: 0  Instance: /tb_top
+# Break in Module tb_top at ./tb_top.sv line 43
+# Compile of alu.sv was successful.
+do runtb_top
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:24:26 on Feb 21,2025
+# vlog -reportprogress 300 -f compile_verilog 
+# -- Compiling module adder
+# -- Compiling module ramOnChip32
+# -- Compiling module ramOnChipData
+# -- Compiling module Memoria32
+# -- Compiling module Memoria32Data
+# -- Compiling package Pipe_Buf_Reg_PKG
+# -- Compiling module RegFile
+# -- Compiling module alu
+# -- Compiling module ALUController
+# -- Compiling module BranchUnit
+# -- Compiling module Controller
+# -- Compiling module flopr
+# -- Compiling module ForwardingUnit
+# -- Compiling module HazardDetection
+# -- Compiling module imm_Gen
+# -- Compiling module mux2
+# -- Compiling module mux4
+# -- Compiling module datamemory
+# -- Compiling module instructionmemory
+# -- Compiling package Datapath_sv_unit
+# -- Importing package Pipe_Buf_Reg_PKG
+# -- Compiling module Datapath
+# -- Compiling module riscv
+# -- Compiling module tb_top
+# 
+# Top level modules:
+# 	tb_top
+# End time: 21:24:26 on Feb 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 21:24:27 on Feb 21,2025, Elapsed time: 0:00:56
+# Errors: 0, Warnings: 6
+# vsim -gui -L altera_mf_ver work.tb_top 
+# Start time: 21:24:27 on Feb 21,2025
+# Loading sv_std.std
+# Loading work.tb_top
+# Loading work.riscv
+# Loading work.Controller
+# Loading work.ALUController
+# Loading work.Pipe_Buf_Reg_PKG
+# Loading work.Datapath_sv_unit
+# Loading work.Datapath
+# Loading work.adder
+# Loading work.mux2
+# Loading work.flopr
+# Loading work.instructionmemory
+# Loading work.Memoria32
+# Loading work.ramOnChip32
+# Loading altera_mf_ver.altsyncram
+# Loading work.HazardDetection
+# Loading work.RegFile
+# Loading work.imm_Gen
+# Loading work.ForwardingUnit
+# Loading work.mux4
+# Loading work.alu
+# Loading work.BranchUnit
+# Loading work.datamemory
+# Loading work.Memoria32Data
+# Loading work.ramOnChipData
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (32) for port 'rs1'. The port definition is at: ./../design/BranchUnit.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/brunit File: ./../design/Datapath.sv Line: 233
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (32) for port 'd0'. The port definition is at: ./../design/mux2.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/jalrdunit File: ./../design/Datapath.sv Line: 247
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (32) for port 'd1'. The port definition is at: ./../design/mux2.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/jalrdunit File: ./../design/Datapath.sv Line: 247
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (1) for port 'y'. The port definition is at: ./../design/mux2.sv(9).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/jalrdunit File: ./../design/Datapath.sv Line: 247
+# hexadecimal
+# unsigned
+# hexadecimal
+# unsigned
+# unsigned
+# unsigned
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock0.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock1.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock2.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock3.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock0.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock1.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock2.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock3.altsyncram_component.m_default.altsyncram_inst
+#                   35: Memory [  1] read with value: [xxxxxxxx] | [         x]
+# 
+#                   35: Memory [  1] read with value: [00000202] | [       514]
+# 
+#                   40: Memory [  1] read with value: [00000002] | [         2]
+# 
+#                   45: Memory [  0] read with value: [00000002] | [         2]
+# 
+#                   45: Register [ 4] written with value: [00000002] | [         2]
+# 
+#                   50: Memory [  0] read with value: [00000202] | [       514]
+# 
+#                   55: Register [ 6] written with value: [00000202] | [       514]
+# 
+#                   75: Register [ 7] written with value: [00000000] | [         0]
+# 
+#                   85: Register [ 6] written with value: [00000000] | [         0]
+# 
+#                   95: Register [ 3] written with value: [00000000] | [         0]
+# 
+#                  105: Register [ 8] written with value: [00000000] | [         0]
+# 
+#                  115: Register [ 1] written with value: [00000000] | [         0]
+# 
+#                  125: Register [ 2] written with value: [00000000] | [         0]
+# 
+# ** Note: $stop    : ./tb_top.sv(43)
+#    Time: 510 ns  Iteration: 0  Instance: /tb_top
+# Break in Module tb_top at ./tb_top.sv line 43
+# Compile of imm_Gen.sv was successful with warnings.
+# Compile of ALUController.sv was successful.
+do runtb_top
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:31:40 on Feb 21,2025
+# vlog -reportprogress 300 -f compile_verilog 
+# -- Compiling module adder
+# -- Compiling module ramOnChip32
+# -- Compiling module ramOnChipData
+# -- Compiling module Memoria32
+# -- Compiling module Memoria32Data
+# -- Compiling package Pipe_Buf_Reg_PKG
+# -- Compiling module RegFile
+# -- Compiling module alu
+# -- Compiling module ALUController
+# -- Compiling module BranchUnit
+# -- Compiling module Controller
+# -- Compiling module flopr
+# -- Compiling module ForwardingUnit
+# -- Compiling module HazardDetection
+# -- Compiling module imm_Gen
+# ** Warning: ./../design/imm_Gen.sv(24): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# -- Compiling module mux2
+# -- Compiling module mux4
+# -- Compiling module datamemory
+# -- Compiling module instructionmemory
+# -- Compiling package Datapath_sv_unit
+# -- Importing package Pipe_Buf_Reg_PKG
+# -- Compiling module Datapath
+# -- Compiling module riscv
+# -- Compiling module tb_top
+# 
+# Top level modules:
+# 	tb_top
+# End time: 21:31:41 on Feb 21,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
+# End time: 21:31:41 on Feb 21,2025, Elapsed time: 0:07:14
+# Errors: 0, Warnings: 7
+# vsim -gui -L altera_mf_ver work.tb_top 
+# Start time: 21:31:41 on Feb 21,2025
+# Loading sv_std.std
+# Loading work.tb_top
+# Loading work.riscv
+# Loading work.Controller
+# Loading work.ALUController
+# Loading work.Pipe_Buf_Reg_PKG
+# Loading work.Datapath_sv_unit
+# Loading work.Datapath
+# Loading work.adder
+# Loading work.mux2
+# Loading work.flopr
+# Loading work.instructionmemory
+# Loading work.Memoria32
+# Loading work.ramOnChip32
+# Loading altera_mf_ver.altsyncram
+# Loading work.HazardDetection
+# Loading work.RegFile
+# Loading work.imm_Gen
+# Loading work.ForwardingUnit
+# Loading work.mux4
+# Loading work.alu
+# Loading work.BranchUnit
+# Loading work.datamemory
+# Loading work.Memoria32Data
+# Loading work.ramOnChipData
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (32) for port 'rs1'. The port definition is at: ./../design/BranchUnit.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/brunit File: ./../design/Datapath.sv Line: 233
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (32) for port 'd0'. The port definition is at: ./../design/mux2.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/jalrdunit File: ./../design/Datapath.sv Line: 247
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (32) for port 'd1'. The port definition is at: ./../design/mux2.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/jalrdunit File: ./../design/Datapath.sv Line: 247
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (1) for port 'y'. The port definition is at: ./../design/mux2.sv(9).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/jalrdunit File: ./../design/Datapath.sv Line: 247
+# hexadecimal
+# unsigned
+# hexadecimal
+# unsigned
+# unsigned
+# unsigned
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock0.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock1.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock2.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock3.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock0.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock1.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock2.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock3.altsyncram_component.m_default.altsyncram_inst
+#                   35: Memory [  1] read with value: [xxxxxxxx] | [         x]
+# 
+#                   35: Memory [  1] read with value: [00000202] | [       514]
+# 
+#                   40: Memory [  1] read with value: [00000002] | [         2]
+# 
+#                   45: Memory [  0] read with value: [00000002] | [         2]
+# 
+#                   45: Register [ 4] written with value: [00000002] | [         2]
+# 
+#                   50: Memory [  0] read with value: [00000202] | [       514]
+# 
+#                   55: Register [ 6] written with value: [00000202] | [       514]
+# 
+#                   75: Register [ 7] written with value: [00000000] | [         0]
+# 
+#                   85: Register [ 6] written with value: [00000000] | [         0]
+# 
+#                   95: Register [ 3] written with value: [00000000] | [         0]
+# 
+#                  105: Register [ 8] written with value: [00000000] | [         0]
+# 
+#                  115: Register [ 1] written with value: [00000000] | [         0]
+# 
+#                  125: Register [ 2] written with value: [00000000] | [         0]
+# 
+# ** Note: $stop    : ./tb_top.sv(43)
+#    Time: 510 ns  Iteration: 0  Instance: /tb_top
+# Break in Module tb_top at ./tb_top.sv line 43
+# Compile of imm_Gen.sv was successful with warnings.
+# Compile of Datapath.sv failed with 1 errors.
+# Compile of Datapath.sv was successful with warnings.
+do runtb_top
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:34:26 on Feb 21,2025
+# vlog -reportprogress 300 -f compile_verilog 
+# -- Compiling module adder
+# -- Compiling module ramOnChip32
+# -- Compiling module ramOnChipData
+# -- Compiling module Memoria32
+# -- Compiling module Memoria32Data
+# -- Compiling package Pipe_Buf_Reg_PKG
+# -- Compiling module RegFile
+# -- Compiling module alu
+# -- Compiling module ALUController
+# -- Compiling module BranchUnit
+# -- Compiling module Controller
+# -- Compiling module flopr
+# -- Compiling module ForwardingUnit
+# -- Compiling module HazardDetection
+# -- Compiling module imm_Gen
+# ** Warning: ./../design/imm_Gen.sv(24): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# -- Compiling module mux2
+# -- Compiling module mux4
+# -- Compiling module datamemory
+# -- Compiling module instructionmemory
+# -- Compiling package Datapath_sv_unit
+# -- Importing package Pipe_Buf_Reg_PKG
+# -- Compiling module Datapath
+# -- Compiling module riscv
+# -- Compiling module tb_top
+# 
+# Top level modules:
+# 	tb_top
+# End time: 21:34:26 on Feb 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# End time: 21:34:27 on Feb 21,2025, Elapsed time: 0:02:46
+# Errors: 0, Warnings: 8
+# vsim -gui -L altera_mf_ver work.tb_top 
+# Start time: 21:34:27 on Feb 21,2025
+# Loading sv_std.std
+# Loading work.tb_top
+# Loading work.riscv
+# Loading work.Controller
+# Loading work.ALUController
+# Loading work.Pipe_Buf_Reg_PKG
+# Loading work.Datapath_sv_unit
+# Loading work.Datapath
+# Loading work.adder
+# Loading work.mux2
+# Loading work.flopr
+# Loading work.instructionmemory
+# Loading work.Memoria32
+# Loading work.ramOnChip32
+# Loading altera_mf_ver.altsyncram
+# Loading work.HazardDetection
+# Loading work.RegFile
+# Loading work.imm_Gen
+# Loading work.ForwardingUnit
+# Loading work.mux4
+# Loading work.alu
+# Loading work.BranchUnit
+# Loading work.datamemory
+# Loading work.Memoria32Data
+# Loading work.ramOnChipData
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (32) for port 'rs1'. The port definition is at: ./../design/BranchUnit.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/brunit File: ./../design/Datapath.sv Line: 233
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (32) for port 'd0'. The port definition is at: ./../design/mux2.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/jalrdunit File: ./../design/Datapath.sv Line: 247
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (32) for port 'd1'. The port definition is at: ./../design/mux2.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/jalrdunit File: ./../design/Datapath.sv Line: 247
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (1) for port 'y'. The port definition is at: ./../design/mux2.sv(9).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/jalrdunit File: ./../design/Datapath.sv Line: 247
+# hexadecimal
+# unsigned
+# hexadecimal
+# unsigned
+# unsigned
+# unsigned
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock0.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock1.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock2.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock3.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock0.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock1.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock2.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock3.altsyncram_component.m_default.altsyncram_inst
+#                   35: Memory [  1] read with value: [xxxxxxxx] | [         x]
+# 
+#                   35: Memory [  1] read with value: [00000202] | [       514]
+# 
+#                   40: Memory [  1] read with value: [00000002] | [         2]
+# 
+#                   45: Memory [  0] read with value: [00000002] | [         2]
+# 
+#                   45: Register [ 4] written with value: [00000002] | [         2]
+# 
+#                   50: Memory [  0] read with value: [00000202] | [       514]
+# 
+#                   55: Register [ 6] written with value: [00000202] | [       514]
+# 
+#                   75: Register [ 7] written with value: [00000204] | [       516]
+# 
+#                   85: Register [ 6] written with value: [00000408] | [      1032]
+# 
+#                   95: Register [ 3] written with value: [00000000] | [         0]
+# 
+#                  105: Register [ 8] written with value: [00000206] | [       518]
+# 
+#                  115: Register [ 1] written with value: [00000000] | [         0]
+# 
+#                  125: Register [ 2] written with value: [00000004] | [         4]
+# 
+# ** Note: $stop    : ./tb_top.sv(43)
+#    Time: 510 ns  Iteration: 0  Instance: /tb_top
+# Break in Module tb_top at ./tb_top.sv line 43
+do runtb_top
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:35:10 on Feb 21,2025
+# vlog -reportprogress 300 -f compile_verilog 
+# -- Compiling module adder
+# -- Compiling module ramOnChip32
+# -- Compiling module ramOnChipData
+# -- Compiling module Memoria32
+# -- Compiling module Memoria32Data
+# -- Compiling package Pipe_Buf_Reg_PKG
+# -- Compiling module RegFile
+# -- Compiling module alu
+# -- Compiling module ALUController
+# -- Compiling module BranchUnit
+# -- Compiling module Controller
+# -- Compiling module flopr
+# -- Compiling module ForwardingUnit
+# -- Compiling module HazardDetection
+# -- Compiling module imm_Gen
+# ** Warning: ./../design/imm_Gen.sv(24): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# -- Compiling module mux2
+# -- Compiling module mux4
+# -- Compiling module datamemory
+# -- Compiling module instructionmemory
+# -- Compiling package Datapath_sv_unit
+# -- Importing package Pipe_Buf_Reg_PKG
+# -- Compiling module Datapath
+# -- Compiling module riscv
+# -- Compiling module tb_top
+# 
+# Top level modules:
+# 	tb_top
+# End time: 21:35:10 on Feb 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# End time: 21:35:11 on Feb 21,2025, Elapsed time: 0:00:44
+# Errors: 0, Warnings: 5
+# vsim -gui -L altera_mf_ver work.tb_top 
+# Start time: 21:35:11 on Feb 21,2025
+# Loading sv_std.std
+# Loading work.tb_top
+# Loading work.riscv
+# Loading work.Controller
+# Loading work.ALUController
+# Loading work.Pipe_Buf_Reg_PKG
+# Loading work.Datapath_sv_unit
+# Loading work.Datapath
+# Loading work.adder
+# Loading work.mux2
+# Loading work.flopr
+# Loading work.instructionmemory
+# Loading work.Memoria32
+# Loading work.ramOnChip32
+# Loading altera_mf_ver.altsyncram
+# Loading work.HazardDetection
+# Loading work.RegFile
+# Loading work.imm_Gen
+# Loading work.ForwardingUnit
+# Loading work.mux4
+# Loading work.alu
+# Loading work.BranchUnit
+# Loading work.datamemory
+# Loading work.Memoria32Data
+# Loading work.ramOnChipData
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (32) for port 'rs1'. The port definition is at: ./../design/BranchUnit.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/brunit File: ./../design/Datapath.sv Line: 233
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (32) for port 'd0'. The port definition is at: ./../design/mux2.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/jalrdunit File: ./../design/Datapath.sv Line: 247
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (32) for port 'd1'. The port definition is at: ./../design/mux2.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/jalrdunit File: ./../design/Datapath.sv Line: 247
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (1) for port 'y'. The port definition is at: ./../design/mux2.sv(9).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/jalrdunit File: ./../design/Datapath.sv Line: 247
+# hexadecimal
+# unsigned
+# hexadecimal
+# unsigned
+# unsigned
+# unsigned
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock0.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock1.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock2.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock3.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock0.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock1.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock2.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock3.altsyncram_component.m_default.altsyncram_inst
+#                   35: Memory [  x] read with value: [xxxxxxxx] | [         x]
+# 
+#                   45: Register [ 4] written with value: [xxxxxxxx] | [         x]
+# 
+#                   55: Register [ 6] written with value: [xxxxxxxx] | [         x]
+# 
+#                   75: Register [ 7] written with value: [xxxxxxxx] | [         x]
+# 
+#                   85: Register [ 6] written with value: [xxxxxxxx] | [         x]
+# 
+#                   95: Register [ 3] written with value: [xxxxxxxx] | [         x]
+# 
+#                  105: Register [ 8] written with value: [xxxxxxxx] | [         x]
+# 
+#                  115: Register [ 1] written with value: [xxxxxxxx] | [         x]
+# 
+#                  125: Register [ 2] written with value: [xxxxxxxx] | [         x]
+# 
+# ** Note: $stop    : ./tb_top.sv(43)
+#    Time: 510 ns  Iteration: 0  Instance: /tb_top
+# Break in Module tb_top at ./tb_top.sv line 43
+# Compile of Datapath.sv was successful with warnings.
+do runtb_top
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:40:58 on Feb 21,2025
+# vlog -reportprogress 300 -f compile_verilog 
+# -- Compiling module adder
+# -- Compiling module ramOnChip32
+# -- Compiling module ramOnChipData
+# -- Compiling module Memoria32
+# -- Compiling module Memoria32Data
+# -- Compiling package Pipe_Buf_Reg_PKG
+# -- Compiling module RegFile
+# -- Compiling module alu
+# -- Compiling module ALUController
+# -- Compiling module BranchUnit
+# -- Compiling module Controller
+# -- Compiling module flopr
+# -- Compiling module ForwardingUnit
+# -- Compiling module HazardDetection
+# -- Compiling module imm_Gen
+# ** Warning: ./../design/imm_Gen.sv(24): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# -- Compiling module mux2
+# -- Compiling module mux4
+# -- Compiling module datamemory
+# -- Compiling module instructionmemory
+# -- Compiling package Datapath_sv_unit
+# -- Importing package Pipe_Buf_Reg_PKG
+# -- Compiling module Datapath
+# -- Compiling module riscv
+# -- Compiling module tb_top
+# 
+# Top level modules:
+# 	tb_top
+# End time: 21:40:58 on Feb 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# End time: 21:40:59 on Feb 21,2025, Elapsed time: 0:05:48
+# Errors: 0, Warnings: 6
+# vsim -gui -L altera_mf_ver work.tb_top 
+# Start time: 21:40:59 on Feb 21,2025
+# Loading sv_std.std
+# Loading work.tb_top
+# Loading work.riscv
+# Loading work.Controller
+# Loading work.ALUController
+# Loading work.Pipe_Buf_Reg_PKG
+# Loading work.Datapath_sv_unit
+# Loading work.Datapath
+# Loading work.adder
+# Loading work.mux2
+# Loading work.flopr
+# Loading work.instructionmemory
+# Loading work.Memoria32
+# Loading work.ramOnChip32
+# Loading altera_mf_ver.altsyncram
+# Loading work.HazardDetection
+# Loading work.RegFile
+# Loading work.imm_Gen
+# Loading work.ForwardingUnit
+# Loading work.mux4
+# Loading work.alu
+# Loading work.BranchUnit
+# Loading work.datamemory
+# Loading work.Memoria32Data
+# Loading work.ramOnChipData
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (32) for port 'rs1'. The port definition is at: ./../design/BranchUnit.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/brunit File: ./../design/Datapath.sv Line: 233
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (32) for port 'd0'. The port definition is at: ./../design/mux2.sv(6).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/jalrdunit File: ./../design/Datapath.sv Line: 247
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (32) for port 'd1'. The port definition is at: ./../design/mux2.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/jalrdunit File: ./../design/Datapath.sv Line: 247
+# ** Warning: (vsim-3015) [PCDPC] - Port size (9) does not match connection size (1) for port 'y'. The port definition is at: ./../design/mux2.sv(9).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/jalrdunit File: ./../design/Datapath.sv Line: 247
+# hexadecimal
+# unsigned
+# hexadecimal
+# unsigned
+# unsigned
+# unsigned
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock0.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock1.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock2.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock3.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock0.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock1.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock2.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock3.altsyncram_component.m_default.altsyncram_inst
+#                   35: Memory [  4] read with value: [xxxxxxxx] | [         x]
+# 
+#                   35: Memory [  4] read with value: [00000000] | [         0]
+# 
+#                   45: Memory [  8] read with value: [00000000] | [         0]
+# 
+#                   45: Register [ 4] written with value: [00000000] | [         0]
+# 
+#                   55: Register [ 6] written with value: [00000000] | [         0]
+# 
+#                   75: Register [ 7] written with value: [0000000c] | [        12]
+# 
+#                   85: Register [ 6] written with value: [00000010] | [        16]
+# 
+#                   95: Register [ 3] written with value: [00000014] | [        20]
+# 
+#                  105: Register [ 8] written with value: [00000018] | [        24]
+# 
+#                  115: Register [ 1] written with value: [0000001c] | [        28]
+# 
+#                  125: Register [ 2] written with value: [00000020] | [        32]
+# 
+# ** Note: $stop    : ./tb_top.sv(43)
+#    Time: 510 ns  Iteration: 0  Instance: /tb_top
+# Break in Module tb_top at ./tb_top.sv line 43
+# Compile of Datapath.sv was successful with warnings.
+do runtb_top
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:43:43 on Feb 21,2025
+# vlog -reportprogress 300 -f compile_verilog 
+# -- Compiling module adder
+# -- Compiling module ramOnChip32
+# -- Compiling module ramOnChipData
+# -- Compiling module Memoria32
+# -- Compiling module Memoria32Data
+# -- Compiling package Pipe_Buf_Reg_PKG
+# -- Compiling module RegFile
+# -- Compiling module alu
+# -- Compiling module ALUController
+# -- Compiling module BranchUnit
+# -- Compiling module Controller
+# -- Compiling module flopr
+# -- Compiling module ForwardingUnit
+# -- Compiling module HazardDetection
+# -- Compiling module imm_Gen
+# ** Warning: ./../design/imm_Gen.sv(24): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# -- Compiling module mux2
+# -- Compiling module mux4
+# -- Compiling module datamemory
+# -- Compiling module instructionmemory
+# -- Compiling package Datapath_sv_unit
+# -- Importing package Pipe_Buf_Reg_PKG
+# -- Compiling module Datapath
+# -- Compiling module riscv
+# -- Compiling module tb_top
+# 
+# Top level modules:
+# 	tb_top
+# End time: 21:43:43 on Feb 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# End time: 21:43:44 on Feb 21,2025, Elapsed time: 0:02:45
+# Errors: 0, Warnings: 6
+# vsim -gui -L altera_mf_ver work.tb_top 
+# Start time: 21:43:44 on Feb 21,2025
+# Loading sv_std.std
+# Loading work.tb_top
+# Loading work.riscv
+# Loading work.Controller
+# Loading work.ALUController
+# Loading work.Pipe_Buf_Reg_PKG
+# Loading work.Datapath_sv_unit
+# Loading work.Datapath
+# Loading work.adder
+# Loading work.mux2
+# Loading work.flopr
+# Loading work.instructionmemory
+# Loading work.Memoria32
+# Loading work.ramOnChip32
+# Loading altera_mf_ver.altsyncram
+# Loading work.HazardDetection
+# Loading work.RegFile
+# Loading work.imm_Gen
+# Loading work.ForwardingUnit
+# Loading work.mux4
+# Loading work.alu
+# Loading work.BranchUnit
+# Loading work.datamemory
+# Loading work.Memoria32Data
+# Loading work.ramOnChipData
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (32) for port 'rs1'. The port definition is at: ./../design/BranchUnit.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/brunit File: ./../design/Datapath.sv Line: 233
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'y'. The port definition is at: ./../design/mux2.sv(9).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/jalrdunit File: ./../design/Datapath.sv Line: 247
+# hexadecimal
+# unsigned
+# hexadecimal
+# unsigned
+# unsigned
+# unsigned
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock0.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock1.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock2.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock3.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock0.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock1.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock2.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock3.altsyncram_component.m_default.altsyncram_inst
+#                   35: Memory [  x] read with value: [xxxxxxxx] | [         x]
+# 
+#                   45: Register [ 4] written with value: [xxxxxxxx] | [         x]
+# 
+#                   55: Register [ 6] written with value: [xxxxxxxx] | [         x]
+# 
+#                   75: Register [ 7] written with value: [xxxxxxxx] | [         x]
+# 
+#                   85: Register [ 6] written with value: [xxxxxxxx] | [         x]
+# 
+#                   95: Register [ 3] written with value: [xxxxxxxx] | [         x]
+# 
+#                  105: Register [ 8] written with value: [xxxxxxxx] | [         x]
+# 
+#                  115: Register [ 1] written with value: [xxxxxxxx] | [         x]
+# 
+#                  125: Register [ 2] written with value: [xxxxxxxx] | [         x]
+# 
+# ** Note: $stop    : ./tb_top.sv(43)
+#    Time: 510 ns  Iteration: 0  Instance: /tb_top
+# Break in Module tb_top at ./tb_top.sv line 43
+# Compile of Datapath.sv failed with 1 errors.
+do runtb_top
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:46:35 on Feb 21,2025
+# vlog -reportprogress 300 -f compile_verilog 
+# -- Compiling module adder
+# -- Compiling module ramOnChip32
+# -- Compiling module ramOnChipData
+# -- Compiling module Memoria32
+# -- Compiling module Memoria32Data
+# -- Compiling package Pipe_Buf_Reg_PKG
+# -- Compiling module RegFile
+# -- Compiling module alu
+# -- Compiling module ALUController
+# -- Compiling module BranchUnit
+# -- Compiling module Controller
+# -- Compiling module flopr
+# -- Compiling module ForwardingUnit
+# -- Compiling module HazardDetection
+# -- Compiling module imm_Gen
+# ** Warning: ./../design/imm_Gen.sv(24): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# -- Compiling module mux2
+# -- Compiling module mux4
+# -- Compiling module datamemory
+# -- Compiling module instructionmemory
+# ** Error: (vlog-13069) ./../design/Datapath.sv(344): near "assign": syntax error, unexpected assign, expecting ';' or ','.
+# End time: 21:46:35 on Feb 21,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 1
+# ** Error: /home/pedro/opt/modelsim_ase/linuxaloem/vlog failed.
+# Error in macro ./runtb_top line 4
+# /home/pedro/opt/modelsim_ase/linuxaloem/vlog failed.
+#     while executing
+# "vlog -f compile_verilog"
+# Compile of Datapath.sv failed with 1 errors.
+# Compile of Datapath.sv was successful.
+do runtb_top
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:46:50 on Feb 21,2025
+# vlog -reportprogress 300 -f compile_verilog 
+# -- Compiling module adder
+# -- Compiling module ramOnChip32
+# -- Compiling module ramOnChipData
+# -- Compiling module Memoria32
+# -- Compiling module Memoria32Data
+# -- Compiling package Pipe_Buf_Reg_PKG
+# -- Compiling module RegFile
+# -- Compiling module alu
+# -- Compiling module ALUController
+# -- Compiling module BranchUnit
+# -- Compiling module Controller
+# -- Compiling module flopr
+# -- Compiling module ForwardingUnit
+# -- Compiling module HazardDetection
+# -- Compiling module imm_Gen
+# ** Warning: ./../design/imm_Gen.sv(24): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# -- Compiling module mux2
+# -- Compiling module mux4
+# -- Compiling module datamemory
+# -- Compiling module instructionmemory
+# -- Compiling package Datapath_sv_unit
+# -- Importing package Pipe_Buf_Reg_PKG
+# -- Compiling module Datapath
+# -- Compiling module riscv
+# -- Compiling module tb_top
+# 
+# Top level modules:
+# 	tb_top
+# End time: 21:46:50 on Feb 21,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# End time: 21:46:51 on Feb 21,2025, Elapsed time: 0:03:07
+# Errors: 1, Warnings: 6
+# vsim -gui -L altera_mf_ver work.tb_top 
+# Start time: 21:46:51 on Feb 21,2025
+# Loading sv_std.std
+# Loading work.tb_top
+# Loading work.riscv
+# Loading work.Controller
+# Loading work.ALUController
+# Loading work.Pipe_Buf_Reg_PKG
+# Loading work.Datapath_sv_unit
+# Loading work.Datapath
+# Loading work.adder
+# Loading work.mux2
+# Loading work.flopr
+# Loading work.instructionmemory
+# Loading work.Memoria32
+# Loading work.ramOnChip32
+# Loading altera_mf_ver.altsyncram
+# Loading work.HazardDetection
+# Loading work.RegFile
+# Loading work.imm_Gen
+# Loading work.ForwardingUnit
+# Loading work.mux4
+# Loading work.alu
+# Loading work.BranchUnit
+# Loading work.datamemory
+# Loading work.Memoria32Data
+# Loading work.ramOnChipData
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (32) for port 'rs1'. The port definition is at: ./../design/BranchUnit.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/brunit File: ./../design/Datapath.sv Line: 233
+# hexadecimal
+# unsigned
+# hexadecimal
+# unsigned
+# unsigned
+# unsigned
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock0.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock1.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock2.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock3.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock0.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock1.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock2.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock3.altsyncram_component.m_default.altsyncram_inst
+#                   35: Memory [  1] read with value: [xxxxxxxx] | [         x]
+# 
+#                   35: Memory [  1] read with value: [00000202] | [       514]
+# 
+#                   40: Memory [  1] read with value: [00000002] | [         2]
+# 
+#                   45: Memory [  0] read with value: [00000002] | [         2]
+# 
+#                   45: Register [ 4] written with value: [00000002] | [         2]
+# 
+#                   50: Memory [  0] read with value: [00000202] | [       514]
+# 
+#                   55: Register [ 6] written with value: [00000202] | [       514]
+# 
+#                   75: Register [ 7] written with value: [00000204] | [       516]
+# 
+#                   85: Register [ 6] written with value: [00000408] | [      1032]
+# 
+#                   95: Register [ 3] written with value: [00000000] | [         0]
+# 
+#                  105: Register [ 8] written with value: [00000206] | [       518]
+# 
+#                  115: Register [ 1] written with value: [00000000] | [         0]
+# 
+#                  125: Register [ 2] written with value: [00000004] | [         4]
+# 
+# ** Note: $stop    : ./tb_top.sv(43)
+#    Time: 510 ns  Iteration: 0  Instance: /tb_top
+# Break in Module tb_top at ./tb_top.sv line 43
+# Compile of Datapath.sv was successful with warnings.
+do runtb_top
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:47:56 on Feb 21,2025
+# vlog -reportprogress 300 -f compile_verilog 
+# -- Compiling module adder
+# -- Compiling module ramOnChip32
+# -- Compiling module ramOnChipData
+# -- Compiling module Memoria32
+# -- Compiling module Memoria32Data
+# -- Compiling package Pipe_Buf_Reg_PKG
+# -- Compiling module RegFile
+# -- Compiling module alu
+# -- Compiling module ALUController
+# -- Compiling module BranchUnit
+# -- Compiling module Controller
+# -- Compiling module flopr
+# -- Compiling module ForwardingUnit
+# -- Compiling module HazardDetection
+# -- Compiling module imm_Gen
+# ** Warning: ./../design/imm_Gen.sv(24): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# -- Compiling module mux2
+# -- Compiling module mux4
+# -- Compiling module datamemory
+# -- Compiling module instructionmemory
+# -- Compiling package Datapath_sv_unit
+# -- Importing package Pipe_Buf_Reg_PKG
+# -- Compiling module Datapath
+# -- Compiling module riscv
+# -- Compiling module tb_top
+# 
+# Top level modules:
+# 	tb_top
+# End time: 21:47:57 on Feb 21,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
+# End time: 21:47:57 on Feb 21,2025, Elapsed time: 0:01:06
+# Errors: 0, Warnings: 3
+# vsim -gui -L altera_mf_ver work.tb_top 
+# Start time: 21:47:57 on Feb 21,2025
+# Loading sv_std.std
+# Loading work.tb_top
+# Loading work.riscv
+# Loading work.Controller
+# Loading work.ALUController
+# Loading work.Pipe_Buf_Reg_PKG
+# Loading work.Datapath_sv_unit
+# Loading work.Datapath
+# Loading work.adder
+# Loading work.mux2
+# Loading work.flopr
+# Loading work.instructionmemory
+# Loading work.Memoria32
+# Loading work.ramOnChip32
+# Loading altera_mf_ver.altsyncram
+# Loading work.HazardDetection
+# Loading work.RegFile
+# Loading work.imm_Gen
+# Loading work.ForwardingUnit
+# Loading work.mux4
+# Loading work.alu
+# Loading work.BranchUnit
+# Loading work.datamemory
+# Loading work.Memoria32Data
+# Loading work.ramOnChipData
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (32) for port 'rs1'. The port definition is at: ./../design/BranchUnit.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/riscV/dp/brunit File: ./../design/Datapath.sv Line: 233
+# hexadecimal
+# unsigned
+# hexadecimal
+# unsigned
+# unsigned
+# unsigned
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# hexadecimal
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock0.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock1.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock2.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.instr_mem.meminst.memBlock3.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock0.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock1.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock2.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: tb_top.riscV.dp.data_mem.mem32.memBlock3.altsyncram_component.m_default.altsyncram_inst
+#                   35: Memory [  1] read with value: [xxxxxxxx] | [         x]
+# 
+#                   35: Memory [  1] read with value: [00000202] | [       514]
+# 
+#                   40: Memory [  1] read with value: [00000002] | [         2]
+# 
+#                   45: Memory [  0] read with value: [00000002] | [         2]
+# 
+#                   45: Register [ 4] written with value: [00000002] | [         2]
+# 
+#                   50: Memory [  0] read with value: [00000202] | [       514]
+# 
+#                   55: Register [ 6] written with value: [00000202] | [       514]
+# 
+#                   75: Register [ 7] written with value: [00000204] | [       516]
+# 
+#                   85: Register [ 6] written with value: [00000408] | [      1032]
+# 
+#                   95: Register [ 3] written with value: [00000000] | [         0]
+# 
+#                  105: Register [ 8] written with value: [00000206] | [       518]
+# 
+#                  115: Register [ 2] written with value: [00000004] | [         4]
+# 
+#                  125: Register [ 1] written with value: [00000000] | [         0]
 # 
 # ** Note: $stop    : ./tb_top.sv(43)
 #    Time: 510 ns  Iteration: 0  Instance: /tb_top
