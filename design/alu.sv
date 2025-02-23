@@ -19,6 +19,8 @@ module alu#(
                     ALUResult = SrcA & SrcB;
             4'b0001:        // OR
                     ALUResult = SrcA | SrcB;
+            4'b1001:        // XOR
+                    ALUResult = SrcA ^ SrcB;
             4'b0010:        // ADD
                     ALUResult = SrcA + SrcB;
             4'b0110:        // SUB
@@ -27,6 +29,8 @@ module alu#(
                     ALUResult = (SrcA == SrcB) ? 1 : 0;
             4'b1110:        // bne
                     ALUResult = (SrcA != SrcB) ? 1 : 0;
+            4'b1100:
+                    ALUResult = (SrcA < SrcB) ? 1 : 0;
 	    4'b0100:        // Slli
 		    ALUResult = SrcA << SrcB;
             4'b0101:        // Srli
