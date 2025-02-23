@@ -1,11 +1,4 @@
-/home/pedro/Documentos/Faculdade/Infra-Hard/Projeto/design/datamemory.sv {1 {vlog -work work -sv -stats=none /home/pedro/Documentos/Faculdade/Infra-Hard/Projeto/design/datamemory.sv
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module datamemory
-
-Top level modules:
-	datamemory
-
-} {} {}} /home/pedro/Documentos/Faculdade/Infra-Hard/Projeto/design/flopr.sv {1 {vlog -work work -sv -stats=none /home/pedro/Documentos/Faculdade/Infra-Hard/Projeto/design/flopr.sv
+/home/pedro/Documentos/Faculdade/Infra-Hard/Projeto/design/flopr.sv {1 {vlog -work work -sv -stats=none /home/pedro/Documentos/Faculdade/Infra-Hard/Projeto/design/flopr.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module flopr
 
