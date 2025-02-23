@@ -22,7 +22,7 @@ module alu#(
             4'b1001:        // XOR
                     ALUResult = SrcA ^ SrcB;
             4'b0010:        // ADD
-                    ALUResult = SrcA + SrcB;
+                    ALUResult = $signed(SrcA) + $signed(SrcB);
             4'b0110:        // SUB
                     ALUResult = SrcA - SrcB;
             4'b1000:        // Equal
